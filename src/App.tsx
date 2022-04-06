@@ -12,7 +12,7 @@ function App(): JSX.Element {
                 automatically reload.
             </p>
             <ul>
-                <li>Jackson Leadlove</li>
+                <li>Jackson Leadlove, Alex Trexler</li>
             </ul>
         </div>
     );
