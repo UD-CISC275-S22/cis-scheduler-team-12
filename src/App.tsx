@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-/* import { Plan } from "./interfaces/plan";
-import { Semester } from "./interfaces/semester";
-import defaults from "./data/default_plan.json"; */
+import { Plan } from "./interfaces/plan";
+import defaults from "./data/default_plan.json";
+import { PlanList } from "./components/PlanList";
+
+const DEFAULTS = defaults.map((plan): Plan => ({ ...plan }));
 
 function App(): JSX.Element {
+    const [plans, setPlans] = useState<Plan[]>(DEFAULTS);
+
+    function editPlan(id: string, newPlan: Plan) {
+        setPlans(
+            plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
+        );
+    }
+
+    function deletePlan(id: string) {
+        setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
+    }
+
     return (
         <div className="App">
             <header className="App-header">
@@ -20,6 +34,13 @@ function App(): JSX.Element {
                 </p>
             </div>
             <br></br>
+            <div>
+                <PlanList
+                    plans={plans}
+                    editPlan={editPlan}
+                    deletePlan={deletePlan}
+                ></PlanList>
+            </div>
             <div className="Madeby-text">
                 <p>Made by Jackson Leadlove, Alex Trexler, and Andrew Woods</p>
             </div>

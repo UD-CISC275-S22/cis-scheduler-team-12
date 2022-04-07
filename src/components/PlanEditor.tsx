@@ -1,4 +1,3 @@
-/* !!!!!!!!!DELETE THIS LATER eslint-disable @typescript-eslint/no-unused-vars DELETE THIS LATER!!!!!!!!!*/
 import React, { useState } from "react";
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
