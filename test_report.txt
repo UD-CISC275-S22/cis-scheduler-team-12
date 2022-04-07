@@ -3,7 +3,7 @@
 > react-scripts test "--coverage"
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (45 ms)
+  ✕ renders the course name somewhere (70 ms)
 
   ● renders the course name somewhere
 
@@ -32,6 +32,50 @@ FAIL src/App.test.tsx
             [36m</p>[39m
           [36m</div>[39m
           [36m<br />[39m
+          [36m<div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"vstack gap-3"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"container"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"row"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<h3>[39m
+                        [0mDefault Plan[0m
+                      [36m</h3>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"container"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"row"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<h3>[39m
+                        [0mDefault Plan 2[0m
+                      [36m</h3>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
           [36m<div[39m
             [33mclass[39m=[32m"Madeby-text"[39m
           [36m>[39m
@@ -61,19 +105,23 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------------|---------|----------|---------|---------|-------------------
-File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------|---------|----------|---------|---------|-------------------
-All files       |     100 |      100 |     100 |     100 |                   
- src            |     100 |      100 |     100 |     100 |                   
-  App.tsx       |     100 |      100 |     100 |     100 |                   
- src/interfaces |       0 |        0 |       0 |       0 |                   
-  course.ts     |       0 |        0 |       0 |       0 |                   
-  plan.ts       |       0 |        0 |       0 |       0 |                   
-  semester.ts   |       0 |        0 |       0 |       0 |                   
-----------------|---------|----------|---------|---------|-------------------
+-----------------|---------|----------|---------|---------|-------------------
+File             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------|---------|----------|---------|---------|-------------------
+All files        |    42.1 |       25 |   38.46 |   41.17 |                   
+ src             |      50 |        0 |   33.33 |      50 |                   
+  App.tsx        |      50 |        0 |   33.33 |      50 | 13-19             
+ src/components  |   36.36 |       50 |   42.85 |   36.36 |                   
+  PlanEditor.tsx |       0 |      100 |       0 |       0 | 19-36             
+  PlanList.tsx   |     100 |      100 |     100 |     100 |                   
+  PlanView.tsx   |   66.66 |       50 |      50 |   66.66 | 18                
+ src/interfaces  |       0 |        0 |       0 |       0 |                   
+  course.ts      |       0 |        0 |       0 |       0 |                   
+  plan.ts        |       0 |        0 |       0 |       0 |                   
+  semester.ts    |       0 |        0 |       0 |       0 |                   
+-----------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.961 s
+Time:        2.789 s
 Ran all test suites.
