@@ -3,7 +3,7 @@
 > react-scripts test "--coverage"
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (57 ms)
+  ✕ renders the course name somewhere (52 ms)
 
   ● renders the course name somewhere
 
@@ -51,6 +51,19 @@ FAIL src/App.test.tsx
                       [36m<h3>[39m
                         [0mDefault Plan[0m
                       [36m</h3>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Semester-list"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<h4>[39m
+                            [0mFall[0m
+                            [0m [0m
+                            [0m2023[0m
+                          [36m</h4>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
                     [36m</div>[39m
                   [36m</div>[39m
                 [36m</div>[39m
@@ -70,6 +83,19 @@ FAIL src/App.test.tsx
                       [36m<h3>[39m
                         [0mDefault Plan 2[0m
                       [36m</h3>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Semester-list"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<h4>[39m
+                            [0mFall[0m
+                            [0m [0m
+                            [0m2023[0m
+                          [36m</h4>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
                     [36m</div>[39m
                   [36m</div>[39m
                 [36m</div>[39m
@@ -77,7 +103,7 @@ FAIL src/App.test.tsx
             [36m</div>[39m
           [36m</div>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"Madeby-text"[39m
+            [33mid[39m=[32m"Footer"[39m
           [36m>[39m
             [36m<p>[39m
               [0mMade by Jackson Leadlove, Alex Trexler, and Andrew Woods[0m
@@ -105,24 +131,24 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------|---------|----------|---------|---------|-------------------
-File             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------|---------|----------|---------|---------|-------------------
-All files        |   38.09 |       25 |   35.71 |   36.84 |                   
- src             |      50 |        0 |   33.33 |      50 |                   
-  App.tsx        |      50 |        0 |   33.33 |      50 | 13-19             
- src/components  |   30.76 |       50 |    37.5 |   30.76 |                   
-  PlanEditor.tsx |       0 |      100 |       0 |       0 | 19-36             
-  PlanList.tsx   |     100 |      100 |     100 |     100 |                   
-  PlanView.tsx   |   66.66 |       50 |      50 |   66.66 | 18                
-  Semester.tsx   |       0 |      100 |       0 |       0 | 5-7               
- src/interfaces  |       0 |        0 |       0 |       0 |                   
-  course.ts      |       0 |        0 |       0 |       0 |                   
-  plan.ts        |       0 |        0 |       0 |       0 |                   
-  semester.ts    |       0 |        0 |       0 |       0 |                   
------------------|---------|----------|---------|---------|-------------------
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   47.61 |       25 |   42.85 |   47.36 |                   
+ src               |      50 |        0 |   33.33 |      50 |                   
+  App.tsx          |      50 |        0 |   33.33 |      50 | 13-19             
+ src/components    |   46.15 |       50 |      50 |   46.15 |                   
+  PlanEditor.tsx   |       0 |      100 |       0 |       0 | 18-35             
+  PlanList.tsx     |     100 |      100 |     100 |     100 |                   
+  PlanView.tsx     |   66.66 |       50 |      50 |   66.66 | 19                
+  SemesterList.tsx |     100 |      100 |     100 |     100 |                   
+ src/interfaces    |       0 |        0 |       0 |       0 |                   
+  course.ts        |       0 |        0 |       0 |       0 |                   
+  plan.ts          |       0 |        0 |       0 |       0 |                   
+  semester.ts      |       0 |        0 |       0 |       0 |                   
+-------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.427 s
+Time:        1.927 s
 Ran all test suites.
