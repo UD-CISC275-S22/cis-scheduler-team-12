@@ -5,14 +5,14 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                UD CISC275 Team 12 Final Project Page
+                CISC Course Planner (Group 12)
             </header>
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
             </p>
             <ul>
-                <li>Jackson Leadlove, Alex Trexle, Andrew Woods</li>
+                <li>Jackson Leadlove, Alex Trexler, Andrew Woods</li>
             </ul>
         </div>
     );
