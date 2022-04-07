@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* ^^^^ DELETE ME LATER ^^^^ */
 import React, { useState } from "react";
-import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
 import { Semester } from "../interfaces/semester";
 

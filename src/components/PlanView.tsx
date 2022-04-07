@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
 import { PlanEditor } from "./PlanEditor";
+import { SemesterComponent } from "./SemesterList";
 
 export function PlanView({
     plan,
@@ -30,6 +31,14 @@ export function PlanView({
             <Row>
                 <Col>
                     <h3>{plan.name}</h3>
+                    <div className="Semester-list">
+                        <SemesterComponent
+                            quarter={"Fall"}
+                            year={2023}
+                            id={0}
+                            courses={[]}
+                        ></SemesterComponent>
+                    </div>
                 </Col>
             </Row>
         </Container>

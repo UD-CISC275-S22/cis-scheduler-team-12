@@ -41,7 +41,7 @@ function App(): JSX.Element {
                     deletePlan={deletePlan}
                 ></PlanList>
             </div>
-            <div className="Madeby-text">
+            <div id="Footer">
                 <p>Made by Jackson Leadlove, Alex Trexler, and Andrew Woods</p>
             </div>
         </div>

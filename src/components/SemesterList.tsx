@@ -7,7 +7,7 @@ export function SemesterComponent(initialSemester: Semester): JSX.Element {
     return (
         <div className="Semester">
             <h4>
-                {semester.quarter} + {semester.year}
+                {semester.quarter} {semester.year}
             </h4>
         </div>
     );
