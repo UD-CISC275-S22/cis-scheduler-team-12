@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import { Plan } from "./interfaces/plan";
+/* import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
-import defaults from "./data/default_plan.json";
+import defaults from "./data/default_plan.json"; */
 
 function App(): JSX.Element {
     return (
