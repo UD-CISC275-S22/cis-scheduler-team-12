@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */ // DELETE ME LATER!!!!!!!!!!!import React from "react";
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
@@ -16,9 +15,23 @@ export function PlanView({
     const [editing, setEditing] = useState<boolean>(false);
 
     function changeEditing() {
-        // Should link to an "editing plan state" component somehow
         setEditing(!editing);
     }
 
-    return <></>;
+    return editing ? (
+        <PlanEditor
+            changeEditing={changeEditing}
+            plan={plan}
+            editPlan={editPlan}
+            deletePlan={deletePlan}
+        ></PlanEditor>
+    ) : (
+        <Container>
+            <Row>
+                <Col>
+                    <h3>{plan.name}</h3>
+                </Col>
+            </Row>
+        </Container>
+    );
 }
