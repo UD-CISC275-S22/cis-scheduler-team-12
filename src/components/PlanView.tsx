@@ -1,7 +1,8 @@
-import React from "react";
-import { useState } from "react";
-// import { Container, Row, Col } from "react-bootstrap";
+/* eslint-disable @typescript-eslint/no-unused-vars */ // DELETE ME LATER!!!!!!!!!!!import React from "react";
+import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
+import { PlanEditor } from "./PlanEditor";
 
 export function PlanView({
     plan,
