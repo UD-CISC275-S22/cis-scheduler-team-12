@@ -6,6 +6,7 @@
             {
                 "quarter": "Fall",
                 "year": 2022,
+                "id": 1,
                 "courses": [
                     {
                         "code": "CISC275",
@@ -28,6 +29,7 @@
             {
                 "quarter": "Spring",
                 "year": 2023,
+                "id": 2,
                 "courses": [
                     {
                         "code": "CISC355",
@@ -56,6 +58,7 @@
             {
                 "quarter": "Fall",
                 "year": 2022,
+                "id": 3,
                 "courses": [
                     {
                         "code": "CISC275",
@@ -78,6 +81,7 @@
             {
                 "quarter": "Spring",
                 "year": 2023,
+                "id": 4,
                 "courses": [
                     {
                         "code": "CISC355",
