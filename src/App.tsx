@@ -4,8 +4,6 @@ import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 import defaults from "./data/default_plan.json";
 
-const DEFAULTS = defaults;
-
 function App(): JSX.Element {
     return (
         <div className="App">
@@ -13,8 +11,10 @@ function App(): JSX.Element {
                 CISC Course Planner (Group 12)
             </header>
             <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
+                Welcome to our CISC Course Planner! On this website, you can
+                create plans for your degree. Each plan consists of a list of
+                semesters, and each semester consists of a list of courses. Each
+                course can be modified to suit your specific requirements.
             </p>
             <ul>
                 <li>Jackson Leadlove, Alex Trexler, Andrew Woods</li>
