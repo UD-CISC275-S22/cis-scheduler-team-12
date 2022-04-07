@@ -1,5 +1,10 @@
 import React from "react";
 import "./App.css";
+import { Plan } from "./interfaces/plan";
+import { Semester } from "./interfaces/semester";
+import defaults from "./data/default_plan.json";
+
+const DEFAULTS = defaults;
 
 function App(): JSX.Element {
     return (
