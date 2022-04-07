@@ -1,7 +1,10 @@
 import { Course } from "./course";
 
+type Season = "Spring" | "Summer" | "Fall" | "Winter";
+
 export interface Semester {
-    quarter: string;
+    quarter: Season;
+    id: number;
     year: number;
     courses: Course[];
 }
