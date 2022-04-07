@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Semester } from "../interfaces/semester";
 
 export function SemesterComponent(initialSemester: Semester): JSX.Element {
-    const [semester, setSemester] = useState<Semester>(initialSemester);
+    const [semester] = useState<Semester>(initialSemester);
 
     return (
         <div className="Semester">
