@@ -10,15 +10,19 @@ function App(): JSX.Element {
             <header className="App-header">
                 CISC Course Planner (Group 12)
             </header>
-            <p>
-                Welcome to our CISC Course Planner! On this website, you can
-                create plans for your degree. Each plan consists of a list of
-                semesters, and each semester consists of a list of courses. Each
-                course can be modified to suit your specific requirements.
-            </p>
-            <ul>
-                <li>Jackson Leadlove, Alex Trexler, Andrew Woods</li>
-            </ul>
+            <div className="Welcome-message">
+                <p>
+                    Welcome to our CISC Course Planner! On this website, you can
+                    create plans for your degree. <br></br>
+                    Each plan consists of a list of semesters, and each semester
+                    consists of a list of courses. <br></br> Each course can be
+                    modified to suit your specific requirements.
+                </p>
+            </div>
+            <br></br>
+            <div className="Madeby-text">
+                <p>Made by Jackson Leadlove, Alex Trexler, and Andrew Woods</p>
+            </div>
         </div>
     );
 }
