@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Default Plan",
+        "semesters": [
+            {
+                "quarter": "Fall",
+                "year": "2022",
+                "courses": [
+                    {
+                        "code": "CISC275",
+                        "title": "Introduction to Software Engineering",
+                        "credits": "3",
+                        "prereqs": ["CISC220"],
+                        "completed": false,
+                        "required": true
+                    },
+                    {
+                        "code": "MATH242",
+                        "title": "Analytic Geometry and Calculus B",
+                        "credits": "4",
+                        "prereqs": ["MATH241"],
+                        "completed": false,
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "quarter": "Spring",
+                "year": "2023",
+                "courses": [
+                    {
+                        "code": "CISC355",
+                        "title": "Computers, Ethics, and Society",
+                        "credits": "3",
+                        "prereqs": [],
+                        "completed": false,
+                        "required": false
+                    },
+                    {
+                        "code": "ENTR456",
+                        "title": "Startup Experience II",
+                        "credits": "3",
+                        "prereqs": ["ENTR455"],
+                        "completed": false,
+                        "required": false
+                    }
+                ]
+            }
+        ]
+    }
+]
