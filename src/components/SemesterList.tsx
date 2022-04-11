@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Semester } from "../interfaces/semester";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -7,14 +7,7 @@ export function SemesterList({
 }: {
     semesters: Semester[];
 }): JSX.Element {
-    const [editing, setEditing] = useState<boolean>(false);
-
-    function changeEditing() {
-        setEditing(!editing);
-    }
-    return editing ? (
-        <></>
-    ) : (
+    return (
         <Container>
             {semesters.map((semester: Semester) => (
                 <div key={semester.id}>
