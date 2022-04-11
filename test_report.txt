@@ -3,7 +3,7 @@
 > react-scripts test "--coverage"
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (52 ms)
+  ✕ renders the course name somewhere (71 ms)
 
   ● renders the course name somewhere
 
@@ -55,13 +55,38 @@ FAIL src/App.test.tsx
                         [33mclass[39m=[32m"Semester-list"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"Semester"[39m
+                          [33mclass[39m=[32m"container"[39m
                         [36m>[39m
-                          [36m<h4>[39m
-                            [0mFall[0m
-                            [0m [0m
-                            [0m2023[0m
-                          [36m</h4>[39m
+                          [36m<div>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"row"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"col"[39m
+                              [36m>[39m
+                                [36m<h4>[39m
+                                  [0mFall[0m
+                                  [0m [0m
+                                  [0m2022[0m
+                                [36m</h4>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                          [36m<div>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"row"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"col"[39m
+                              [36m>[39m
+                                [36m<h4>[39m
+                                  [0mSpring[0m
+                                  [0m [0m
+                                  [0m2023[0m
+                                [36m</h4>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
                         [36m</div>[39m
                       [36m</div>[39m
                     [36m</div>[39m
@@ -87,13 +112,38 @@ FAIL src/App.test.tsx
                         [33mclass[39m=[32m"Semester-list"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"Semester"[39m
+                          [33mclass[39m=[32m"container"[39m
                         [36m>[39m
-                          [36m<h4>[39m
-                            [0mFall[0m
-                            [0m [0m
-                            [0m2023[0m
-                          [36m</h4>[39m
+                          [36m<div>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"row"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"col"[39m
+                              [36m>[39m
+                                [36m<h4>[39m
+                                  [0mWinter[0m
+                                  [0m [0m
+                                  [0m2023[0m
+                                [36m</h4>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                          [36m<div>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"row"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"col"[39m
+                              [36m>[39m
+                                [36m<h4>[39m
+                                  [0mSummer[0m
+                                  [0m [0m
+                                  [0m2023[0m
+                                [36m</h4>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
                         [36m</div>[39m
                       [36m</div>[39m
                     [36m</div>[39m
@@ -134,10 +184,10 @@ FAIL src/App.test.tsx
 -------------------|---------|----------|---------|---------|-------------------
 File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------|---------|----------|---------|---------|-------------------
-All files          |   47.61 |       25 |   42.85 |   47.36 |                   
+All files          |   47.61 |       25 |   46.66 |   47.36 |                   
  src               |      50 |        0 |   33.33 |      50 |                   
   App.tsx          |      50 |        0 |   33.33 |      50 | 13-19             
- src/components    |   46.15 |       50 |      50 |   46.15 |                   
+ src/components    |   46.15 |       50 |   55.55 |   46.15 |                   
   PlanEditor.tsx   |       0 |      100 |       0 |       0 | 18-35             
   PlanList.tsx     |     100 |      100 |     100 |     100 |                   
   PlanView.tsx     |   66.66 |       50 |      50 |   66.66 | 19                
@@ -150,5 +200,5 @@ All files          |   47.61 |       25 |   42.85 |   47.36 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.927 s
+Time:        2.14 s
 Ran all test suites.
