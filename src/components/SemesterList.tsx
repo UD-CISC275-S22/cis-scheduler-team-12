@@ -1,14 +1,32 @@
 import React, { useState } from "react";
 import { Semester } from "../interfaces/semester";
+import { Container, Row, Col } from "react-bootstrap";
 
-export function SemesterComponent(initialSemester: Semester): JSX.Element {
-    const [semester] = useState<Semester>(initialSemester);
+export function SemesterList({
+    semesters
+}: {
+    semesters: Semester[];
+}): JSX.Element {
+    const [editing, setEditing] = useState<boolean>(false);
 
-    return (
-        <div className="Semester">
-            <h4>
-                {semester.quarter} {semester.year}
-            </h4>
-        </div>
+    function changeEditing() {
+        setEditing(!editing);
+    }
+    return editing ? (
+        <></>
+    ) : (
+        <Container>
+            {semesters.map((semester: Semester) => (
+                <div key={semester.id}>
+                    <Row>
+                        <Col>
+                            <h4>
+                                {semester.quarter} {semester.year}
+                            </h4>
+                        </Col>
+                    </Row>
+                </div>
+            ))}
+        </Container>
     );
 }
