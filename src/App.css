@@ -42,7 +42,7 @@
 }
 
 .Semester-list {
-    display: inline-grid;
+    display: flex;
     grid-auto-flow: column;
 }
 
@@ -55,8 +55,15 @@
 }
 
 .Plan {
-    display: inline-grid;
     grid-auto-flow: column;
+}
+
+.Plan-header {
+    display: inline-flex;
+}
+
+.Edit-button {
+    padding-left: 1rem;
 }
 
 @keyframes App-logo-spin {

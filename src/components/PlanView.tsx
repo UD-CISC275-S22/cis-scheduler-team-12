@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Row, Col } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
 import { PlanEditor } from "./PlanEditor";
 import { RecordControls } from "./RecordControls";
@@ -29,15 +28,17 @@ export function PlanView({
         ></PlanEditor>
     ) : (
         <div className="Plan">
-            <Row>
-                <RecordControls changeEditing={changeEditing}></RecordControls>
-                <Col>
-                    <h3>{plan.name}</h3>
-                    <div>
-                        <SemesterList semesters={plan.semesters}></SemesterList>
-                    </div>
-                </Col>
-            </Row>
+            <div className="Plan-header">
+                <h3>{plan.name}</h3>
+                <div className="Edit-button">
+                    <RecordControls
+                        changeEditing={changeEditing}
+                    ></RecordControls>
+                </div>
+            </div>
+            <div className="Semester-list">
+                <SemesterList semesters={plan.semesters}></SemesterList>
+            </div>
         </div>
     );
 }
