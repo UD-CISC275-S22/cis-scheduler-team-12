@@ -27,15 +27,15 @@ export function PlanView({
             deletePlan={deletePlan}
         ></PlanEditor>
     ) : (
-        <Container>
+        <div className="Plan">
             <Row>
                 <Col>
                     <h3>{plan.name}</h3>
-                    <div className="Semester-list">
+                    <div>
                         <SemesterList semesters={plan.semesters}></SemesterList>
                     </div>
                 </Col>
             </Row>
-        </Container>
+        </div>
     );
 }

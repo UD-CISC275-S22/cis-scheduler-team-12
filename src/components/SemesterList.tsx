@@ -8,14 +8,18 @@ export function SemesterList({
     semesters: Semester[];
 }): JSX.Element {
     return (
-        <Container>
+        <Container className="Semester-list">
             {semesters.map((semester: Semester) => (
-                <div key={semester.id}>
+                <div key={semester.id} className="Semester">
                     <Row>
                         <Col>
                             <h4>
                                 {semester.quarter} {semester.year}
                             </h4>
+                            <div>
+                                Course list component goes here. If the text is
+                                longer than this is what happens.
+                            </div>
                         </Col>
                     </Row>
                 </div>

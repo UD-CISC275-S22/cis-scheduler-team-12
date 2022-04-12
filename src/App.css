@@ -43,16 +43,20 @@
 
 .Semester-list {
     display: inline-grid;
-    grid-template-columns: 2;
+    grid-auto-flow: column;
 }
 
 .Semester {
-    display: inline-grid;
+    display: grid;
     border: 2px solid black;
     padding-left: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
     padding-right: 1rem;
+}
+
+.Plan {
+    display: inline-grid;
+    grid-auto-flow: column;
 }
 
 @keyframes App-logo-spin {
