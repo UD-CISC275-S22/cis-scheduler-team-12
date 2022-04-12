@@ -3,7 +3,7 @@
 > react-scripts test "--coverage"
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (74 ms)
+  ✕ renders the course name somewhere (79 ms)
 
   ● renders the course name somewhere
 
@@ -43,64 +43,66 @@ FAIL src/App.test.tsx
                   [33mclass[39m=[32m"Plan"[39m
                 [36m>[39m
                   [36m<div[39m
-                    [33mclass[39m=[32m"row"[39m
+                    [33mclass[39m=[32m"Plan-header"[39m
                   [36m>[39m
-                    [36m<div>[39m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mEdit[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
+                    [36m<h3>[39m
+                      [0mDefault Plan[0m
+                    [36m</h3>[39m
                     [36m<div[39m
-                      [33mclass[39m=[32m"col"[39m
+                      [33mclass[39m=[32m"Edit-button"[39m
                     [36m>[39m
-                      [36m<h3>[39m
-                        [0mDefault Plan[0m
-                      [36m</h3>[39m
                       [36m<div>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0mEdit[0m
+                        [36m</button>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"Semester-list"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Semester-list container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Semester"[39m
+                      [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"Semester-list container"[39m
+                          [33mclass[39m=[32m"row"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"Semester"[39m
+                            [33mclass[39m=[32m"col"[39m
                           [36m>[39m
-                            [36m<div[39m
-                              [33mclass[39m=[32m"row"[39m
-                            [36m>[39m
-                              [36m<div[39m
-                                [33mclass[39m=[32m"col"[39m
-                              [36m>[39m
-                                [36m<h4>[39m
-                                  [0mFall[0m
-                                  [0m [0m
-                                  [0m2022[0m
-                                [36m</h4>[39m
-                                [36m<div>[39m
-                                  [0mCourse list component goes here. If the text is longer than this is what happens.[0m
-                                [36m</div>[39m
-                              [36m</div>[39m
+                            [36m<h4>[39m
+                              [0mFall[0m
+                              [0m [0m
+                              [0m2022[0m
+                            [36m</h4>[39m
+                            [36m<div>[39m
+                              [0mCourse list component goes here. If the text is longer than this is what happens.[0m
                             [36m</div>[39m
                           [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Semester"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row"[39m
+                        [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"Semester"[39m
+                            [33mclass[39m=[32m"col"[39m
                           [36m>[39m
-                            [36m<div[39m
-                              [33mclass[39m=[32m"row"[39m
-                            [36m>[39m
-                              [36m<div[39m
-                                [33mclass[39m=[32m"col"[39m
-                              [36m>[39m
-                                [36m<h4>[39m
-                                  [0mSpring[0m
-                                  [0m [0m
-                                  [0m2023[0m
-                                [36m</h4>[39m
-                                [36m<div>[39m
-                                  [0mCourse list component goes here. If the text is longer than this is what happens.[0m
-                                [36m</div>[39m
-                              [36m</div>[39m
+                            [36m<h4>[39m
+                              [0mSpring[0m
+                              [0m [0m
+                              [0m2023[0m
+                            [36m</h4>[39m
+                            [36m<div>[39m
+                              [0mCourse list component goes here. If the text is longer than this is what happens.[0m
                             [36m</div>[39m
                           [36m</div>[39m
                         [36m</div>[39m
@@ -116,64 +118,66 @@ FAIL src/App.test.tsx
                   [33mclass[39m=[32m"Plan"[39m
                 [36m>[39m
                   [36m<div[39m
-                    [33mclass[39m=[32m"row"[39m
+                    [33mclass[39m=[32m"Plan-header"[39m
                   [36m>[39m
-                    [36m<div>[39m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mEdit[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
+                    [36m<h3>[39m
+                      [0mDefault Plan 2[0m
+                    [36m</h3>[39m
                     [36m<div[39m
-                      [33mclass[39m=[32m"col"[39m
+                      [33mclass[39m=[32m"Edit-button"[39m
                     [36m>[39m
-                      [36m<h3>[39m
-                        [0mDefault Plan 2[0m
-                      [36m</h3>[39m
                       [36m<div>[39m
+                        [36m<button[39m
+                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                          [33mtype[39m=[32m"button"[39m
+                        [36m>[39m
+                          [0mEdit[0m
+                        [36m</button>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"Semester-list"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Semester-list container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Semester"[39m
+                      [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"Semester-list container"[39m
+                          [33mclass[39m=[32m"row"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"Semester"[39m
+                            [33mclass[39m=[32m"col"[39m
                           [36m>[39m
-                            [36m<div[39m
-                              [33mclass[39m=[32m"row"[39m
-                            [36m>[39m
-                              [36m<div[39m
-                                [33mclass[39m=[32m"col"[39m
-                              [36m>[39m
-                                [36m<h4>[39m
-                                  [0mWinter[0m
-                                  [0m [0m
-                                  [0m2023[0m
-                                [36m</h4>[39m
-                                [36m<div>[39m
-                                  [0mCourse list component goes here. If the text is longer than this is what happens.[0m
-                                [36m</div>[39m
-                              [36m</div>[39m
+                            [36m<h4>[39m
+                              [0mWinter[0m
+                              [0m [0m
+                              [0m2023[0m
+                            [36m</h4>[39m
+                            [36m<div>[39m
+                              [0mCourse list component goes here. If the text is longer than this is what happens.[0m
                             [36m</div>[39m
                           [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Semester"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row"[39m
+                        [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"Semester"[39m
+                            [33mclass[39m=[32m"col"[39m
                           [36m>[39m
-                            [36m<div[39m
-                              [33mclass[39m=[32m"row"[39m
-                            [36m>[39m
-                              [36m<div[39m
-                                [33mclass[39m=[32m"col"[39m
-                              [36m>[39m
-                                [36m<h4>[39m
-                                  [0mSummer[0m
-                                  [0m [0m
-                                  [0m2023[0m
-                                [36m</h4>[39m
-                                [36m<div>[39m
-                                  [0mCourse list component goes here. If the text is longer than this is what happens.[0m
-                                [36m</div>[39m
-                              [36m</div>[39m
+                            [36m<h4>[39m
+                              [0mSummer[0m
+                              [0m [0m
+                              [0m2023[0m
+                            [36m</h4>[39m
+                            [36m<div>[39m
+                              [0mCourse list component goes here. If the text is longer than this is what happens.[0m
                             [36m</div>[39m
                           [36m</div>[39m
                         [36m</div>[39m
@@ -232,7 +236,7 @@ All files            |   43.24 |       10 |    37.5 |   45.45 |
   AddPlanModal.tsx   |      40 |      100 |   33.33 |      40 | 16-21,40          
   PlanEditor.tsx     |       0 |        0 |       0 |       0 | 19-53             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
-  PlanView.tsx       |   66.66 |       50 |      50 |   66.66 | 20                
+  PlanView.tsx       |   66.66 |       50 |      50 |   66.66 | 19                
   RecordControls.tsx |     100 |      100 |     100 |     100 |                   
   SemesterList.tsx   |     100 |      100 |     100 |     100 |                   
  src/interfaces      |       0 |        0 |       0 |       0 |                   
@@ -243,5 +247,5 @@ All files            |   43.24 |       10 |    37.5 |   45.45 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.095 s
+Time:        2.226 s
 Ran all test suites.
