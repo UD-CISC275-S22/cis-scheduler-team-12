@@ -3,10 +3,13 @@ import "./App.css";
 import { Plan } from "./interfaces/plan";
 import defaults from "./data/default_plan.json";
 import { PlanList } from "./components/PlanList";
+import { AddPlanModal } from "./components/AddPlanModal";
+import { Button } from "react-bootstrap";
 
 const DEFAULTS = defaults.map((plan): Plan => ({ ...plan }));
 
 function App(): JSX.Element {
+    const [showAddModal, setShowAddModal] = useState(false);
     const [plans, setPlans] = useState<Plan[]>(DEFAULTS);
 
     function editPlan(id: string, newPlan: Plan) {
@@ -16,9 +19,19 @@ function App(): JSX.Element {
     }
 
     function deletePlan(id: string) {
-        setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
+        setPlans(plans.filter((plan: Plan): boolean => plan.name !== id));
     }
 
+    function addPlan(newPlan: Plan) {
+        const existing = plans.find(
+            (plan: Plan): boolean => plan.name === newPlan.name
+        );
+        if (existing === undefined) {
+            setPlans([...plans, newPlan]);
+        }
+    }
+    const handleCloseAddModal = () => setShowAddModal(false);
+    const handleShowAddModal = () => setShowAddModal(true);
     return (
         <div className="App">
             <header className="App-header">
@@ -40,6 +53,20 @@ function App(): JSX.Element {
                     editPlan={editPlan}
                     deletePlan={deletePlan}
                 ></PlanList>
+                <div>
+                    <Button
+                        variant="success"
+                        className="m-4"
+                        onClick={handleShowAddModal}
+                    >
+                        Add New Plan
+                    </Button>
+                    <AddPlanModal
+                        show={showAddModal}
+                        handleClose={handleCloseAddModal}
+                        addPlan={addPlan}
+                    ></AddPlanModal>
+                </div>
             </div>
             <div id="Footer">
                 <p>Made by Jackson Leadlove, Alex Trexler, and Andrew Woods</p>

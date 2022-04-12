@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
 import { PlanEditor } from "./PlanEditor";
+import { RecordControls } from "./RecordControls";
 import { SemesterList } from "./SemesterList";
 
 export function PlanView({
@@ -29,6 +30,7 @@ export function PlanView({
     ) : (
         <Container>
             <Row>
+                <RecordControls changeEditing={changeEditing}></RecordControls>
                 <Col>
                     <h3>{plan.name}</h3>
                     <div className="Semester-list">
