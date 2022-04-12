@@ -3,7 +3,7 @@
 > react-scripts test "--coverage"
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (88 ms)
+  ✕ renders the course name somewhere (74 ms)
 
   ● renders the course name somewhere
 
@@ -40,7 +40,7 @@ FAIL src/App.test.tsx
                 [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
               [36m>[39m
                 [36m<div[39m
-                  [33mclass[39m=[32m"container"[39m
+                  [33mclass[39m=[32m"Plan"[39m
                 [36m>[39m
                   [36m<div[39m
                     [33mclass[39m=[32m"row"[39m
@@ -59,13 +59,13 @@ FAIL src/App.test.tsx
                       [36m<h3>[39m
                         [0mDefault Plan[0m
                       [36m</h3>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"Semester-list"[39m
-                      [36m>[39m
+                      [36m<div>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"container"[39m
+                          [33mclass[39m=[32m"Semester-list container"[39m
                         [36m>[39m
-                          [36m<div>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"Semester"[39m
+                          [36m>[39m
                             [36m<div[39m
                               [33mclass[39m=[32m"row"[39m
                             [36m>[39m
@@ -77,10 +77,15 @@ FAIL src/App.test.tsx
                                   [0m [0m
                                   [0m2022[0m
                                 [36m</h4>[39m
+                                [36m<div>[39m
+                                  [0mCourse list component goes here. If the text is longer than this is what happens.[0m
+                                [36m</div>[39m
                               [36m</div>[39m
                             [36m</div>[39m
                           [36m</div>[39m
-                          [36m<div>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"Semester"[39m
+                          [36m>[39m
                             [36m<div[39m
                               [33mclass[39m=[32m"row"[39m
                             [36m>[39m
@@ -92,6 +97,9 @@ FAIL src/App.test.tsx
                                   [0m [0m
                                   [0m2023[0m
                                 [36m</h4>[39m
+                                [36m<div>[39m
+                                  [0mCourse list component goes here. If the text is longer than this is what happens.[0m
+                                [36m</div>[39m
                               [36m</div>[39m
                             [36m</div>[39m
                           [36m</div>[39m
@@ -105,7 +113,7 @@ FAIL src/App.test.tsx
                 [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
               [36m>[39m
                 [36m<div[39m
-                  [33mclass[39m=[32m"container"[39m
+                  [33mclass[39m=[32m"Plan"[39m
                 [36m>[39m
                   [36m<div[39m
                     [33mclass[39m=[32m"row"[39m
@@ -124,13 +132,13 @@ FAIL src/App.test.tsx
                       [36m<h3>[39m
                         [0mDefault Plan 2[0m
                       [36m</h3>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"Semester-list"[39m
-                      [36m>[39m
+                      [36m<div>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"container"[39m
+                          [33mclass[39m=[32m"Semester-list container"[39m
                         [36m>[39m
-                          [36m<div>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"Semester"[39m
+                          [36m>[39m
                             [36m<div[39m
                               [33mclass[39m=[32m"row"[39m
                             [36m>[39m
@@ -142,10 +150,15 @@ FAIL src/App.test.tsx
                                   [0m [0m
                                   [0m2023[0m
                                 [36m</h4>[39m
+                                [36m<div>[39m
+                                  [0mCourse list component goes here. If the text is longer than this is what happens.[0m
+                                [36m</div>[39m
                               [36m</div>[39m
                             [36m</div>[39m
                           [36m</div>[39m
-                          [36m<div>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"Semester"[39m
+                          [36m>[39m
                             [36m<div[39m
                               [33mclass[39m=[32m"row"[39m
                             [36m>[39m
@@ -157,6 +170,9 @@ FAIL src/App.test.tsx
                                   [0m [0m
                                   [0m2023[0m
                                 [36m</h4>[39m
+                                [36m<div>[39m
+                                  [0mCourse list component goes here. If the text is longer than this is what happens.[0m
+                                [36m</div>[39m
                               [36m</div>[39m
                             [36m</div>[39m
                           [36m</div>[39m
@@ -227,5 +243,5 @@ All files            |   43.24 |       10 |    37.5 |   45.45 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.33 s
+Time:        2.095 s
 Ran all test suites.
