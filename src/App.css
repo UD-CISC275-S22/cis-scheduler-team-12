@@ -16,7 +16,7 @@
 .App-header {
     width: 100%;
     background-color: #035c49;
-    min-height: 30vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .Welcome-message {
-    font-size: 120%;
+    font-size: 110%;
 }
 
 .Madeby-text {
@@ -58,7 +58,12 @@
 }
 
 .Plan-header {
+    margin-top: 8px;
     display: inline-flex;
+}
+
+.Plan-header Button {
+    margin-top: 4px;
 }
 
 .Edit-button {
@@ -84,6 +89,10 @@
 
 .Course-table tr:nth-child(even) {
     background-color: #ddd;
+}
+
+.Footer {
+    font-style: oblique;
 }
 
 @keyframes App-logo-spin {

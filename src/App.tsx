@@ -68,8 +68,11 @@ function App(): JSX.Element {
                     ></AddPlanModal>
                 </div>
             </div>
-            <div id="Footer">
-                <p>Made by Jackson Leadlove, Alex Trexler, and Andrew Woods</p>
+            <div id="Footer" className="Footer">
+                <p>
+                    Made by Team 12: Jackson Leadlove, Alex Trexler, and Andrew
+                    Woods
+                </p>
             </div>
         </div>
     );
