@@ -17,8 +17,37 @@ export function SemesterList({
                                 {semester.quarter} {semester.year}
                             </h4>
                             <div>
-                                Course list component goes here. If the text is
-                                longer than this is what happens.
+                                <table className="Course-table">
+                                    <tr>
+                                        <th>Course Code</th>
+                                        <th>Course Name</th>
+                                        <th>Credits</th>
+                                    </tr>
+                                    <tr>
+                                        <td>CISC275</td>
+                                        <td>
+                                            Introduction to Software Engineering
+                                        </td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MATH242</td>
+                                        <td>
+                                            Analytic Geometry and Calculus B
+                                        </td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CISC355</td>
+                                        <td>Computers, Ethics, and Society</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ENTR456</td>
+                                        <td>Startup Experience II</td>
+                                        <td>3</td>
+                                    </tr>
+                                </table>
                             </div>
                         </Col>
                     </Row>
