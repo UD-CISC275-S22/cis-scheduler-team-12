@@ -43,12 +43,11 @@
 
 .Semester-list {
     display: flex;
-    grid-auto-flow: column;
+    justify-content: center;
 }
 
 .Semester {
     display: grid;
-    border: 2px solid black;
     padding-left: 1rem;
     margin: 0.5rem;
     padding-right: 1rem;
@@ -64,6 +63,27 @@
 
 .Edit-button {
     padding-left: 1rem;
+}
+
+.Course-table {
+    border: 1px solid #aaaaaa;
+    text-align: left;
+    display: block;
+    margin: 8px;
+}
+
+.Course-table th {
+    border: 1px solid #bbb;
+    padding: 10px 40px 8px 4px;
+}
+
+.Course-table td {
+    padding: 10px 40px 8px 4px;
+    border: 1px solid #bbb;
+}
+
+.Course-table tr:nth-child(even) {
+    background-color: #ddd;
 }
 
 @keyframes App-logo-spin {
