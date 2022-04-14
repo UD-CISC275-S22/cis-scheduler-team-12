@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "Default Plan",
         "semesters": [
             {
@@ -52,7 +52,7 @@
         ]
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "Default Plan 2",
         "semesters": [
             {

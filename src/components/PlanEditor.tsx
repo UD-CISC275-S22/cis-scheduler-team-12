@@ -11,8 +11,8 @@ export function PlanEditor({
 }: {
     changeEditing: () => void;
     plan: Plan;
-    editPlan: (id: string, newPlan: Plan) => void;
-    deletePlan: (id: string) => void;
+    editPlan: (id: number, newPlan: Plan) => void;
+    deletePlan: (id: number) => void;
 }): JSX.Element {
     const [name, setName] = useState<string>(plan.name);
     const [semesters] = useState<Semester[]>(plan.semesters);
@@ -48,7 +48,7 @@ export function PlanEditor({
                 Save
             </Button>
             <Button
-                onClick={() => deletePlan(plan.name)}
+                onClick={() => deletePlan(plan.id)}
                 variant="danger"
                 className="me-8"
             >
