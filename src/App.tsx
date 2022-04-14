@@ -12,14 +12,14 @@ function App(): JSX.Element {
     const [showAddModal, setShowAddModal] = useState(false);
     const [plans, setPlans] = useState<Plan[]>(DEFAULTS);
 
-    function editPlan(id: string, newPlan: Plan) {
+    function editPlan(id: number, newPlan: Plan) {
         setPlans(
             plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
         );
     }
 
-    function deletePlan(id: string) {
-        setPlans(plans.filter((plan: Plan): boolean => plan.name !== id));
+    function deletePlan(id: number) {
+        setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
     }
 
     function addPlan(newPlan: Plan) {

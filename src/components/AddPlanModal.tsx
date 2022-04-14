@@ -14,7 +14,7 @@ export function AddPlanModal({
     const [name, setName] = useState<string>("");
     function saveChanges() {
         addPlan({
-            id: "",
+            id: 0,
             name: name,
             semesters: []
         });
