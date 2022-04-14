@@ -1,6 +1,7 @@
 import React from "react";
 import { Semester } from "../interfaces/semester";
 import { Container, Row, Col } from "react-bootstrap";
+import { CourseList } from "./CourseList";
 
 export function SemesterList({
     semesters
@@ -17,37 +18,9 @@ export function SemesterList({
                                 {semester.quarter} {semester.year}
                             </h4>
                             <div>
-                                <table className="Course-table">
-                                    <tr>
-                                        <th>Course Code</th>
-                                        <th>Course Name</th>
-                                        <th>Credits</th>
-                                    </tr>
-                                    <tr>
-                                        <td>CISC275</td>
-                                        <td>
-                                            Introduction to Software Engineering
-                                        </td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MATH242</td>
-                                        <td>
-                                            Analytic Geometry and Calculus B
-                                        </td>
-                                        <td>4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CISC355</td>
-                                        <td>Computers, Ethics, and Society</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ENTR456</td>
-                                        <td>Startup Experience II</td>
-                                        <td>3</td>
-                                    </tr>
-                                </table>
+                                <CourseList
+                                    courses={semester.courses}
+                                ></CourseList>
                             </div>
                         </Col>
                     </Row>

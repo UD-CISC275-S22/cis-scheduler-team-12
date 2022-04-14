@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* ^^^^ DELETE ME LATER ^^^^ */
 import React, { useState } from "react";
 import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
@@ -17,7 +15,7 @@ export function PlanEditor({
     deletePlan: (id: string) => void;
 }): JSX.Element {
     const [name, setName] = useState<string>(plan.name);
-    const [semesters, setSemesters] = useState<Semester[]>(plan.semesters);
+    const [semesters] = useState<Semester[]>(plan.semesters);
 
     function save() {
         editPlan(plan.id, {
