@@ -36,7 +36,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (147 ms)
+  ✕ renders the course name somewhere (163 ms)
 
   ● renders the course name somewhere
 
@@ -421,17 +421,19 @@ FAIL src/App.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   46.15 |       10 |    42.3 |   48.57 |                   
+All files            |   35.29 |     6.25 |   33.33 |   36.17 |                   
  src                 |   41.17 |        0 |      20 |   46.15 |                   
   App.tsx            |   41.17 |        0 |      20 |   46.15 | 16-30             
- src/components      |      50 |    16.66 |   56.25 |      50 |                   
+ src/components      |   32.35 |     8.33 |   39.13 |   32.35 |                   
   AddPlanModal.tsx   |      40 |      100 |   33.33 |      40 | 16-21,40          
   CourseList.tsx     |     100 |      100 |     100 |     100 |                   
   PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-51             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
   PlanView.tsx       |   66.66 |       50 |      50 |   66.66 | 19                
   RecordControls.tsx |     100 |      100 |     100 |     100 |                   
+  SemesterEditor.tsx |       0 |        0 |       0 |       0 | 17-65             
   SemesterList.tsx   |     100 |      100 |     100 |     100 |                   
+  SemesterView.tsx   |       0 |        0 |       0 |       0 | 17-23             
  src/interfaces      |       0 |        0 |       0 |       0 |                   
   course.ts          |       0 |        0 |       0 |       0 |                   
   plan.ts            |       0 |        0 |       0 |       0 |                   
@@ -440,5 +442,5 @@ All files            |   46.15 |       10 |    42.3 |   48.57 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.233 s
+Time:        2.652 s
 Ran all test suites.
