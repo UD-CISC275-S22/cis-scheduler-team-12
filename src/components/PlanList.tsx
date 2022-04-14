@@ -9,8 +9,8 @@ export function PlanList({
     editPlan
 }: {
     plans: Plan[];
-    deletePlan: (id: string) => void;
-    editPlan: (id: string, newPlan: Plan) => void;
+    deletePlan: (id: number) => void;
+    editPlan: (id: number, newPlan: Plan) => void;
 }): JSX.Element {
     return (
         <Stack gap={3}>

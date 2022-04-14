@@ -1,11 +1,11 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "Default Plan",
         "semesters": [
             {
                 "quarter": "Fall",
-                "year": 2022,
+                "year": "2022",
                 "id": 1,
                 "courses": [
                     {
@@ -28,7 +28,7 @@
             },
             {
                 "quarter": "Spring",
-                "year": 2023,
+                "year": "2023",
                 "id": 2,
                 "courses": [
                     {
@@ -52,12 +52,12 @@
         ]
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "Default Plan 2",
         "semesters": [
             {
                 "quarter": "Winter",
-                "year": 2023,
+                "year": "2023",
                 "id": 3,
                 "courses": [
                     {
@@ -80,7 +80,7 @@
             },
             {
                 "quarter": "Summer",
-                "year": 2023,
+                "year": "2023",
                 "id": 4,
                 "courses": [
                     {
