@@ -6,7 +6,7 @@ import { PlanList } from "./components/PlanList";
 import { AddPlanModal } from "./components/AddPlanModal";
 import { Button } from "react-bootstrap";
 
-const DEFAULTS = defaults.map((plan): Plan => ({ ...plan }));
+export const DEFAULTS = defaults.map((plan): Plan => ({ ...plan }));
 
 function App(): JSX.Element {
     const [showAddModal, setShowAddModal] = useState(false);
