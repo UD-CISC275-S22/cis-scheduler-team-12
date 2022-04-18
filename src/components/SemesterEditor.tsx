@@ -20,7 +20,8 @@ export function SemesterEditor({
 
     function save() {
         editSemester(semester.id, {
-            ...semester,
+            id: semester.id,
+            quarter: quarter,
             year: year || "",
             courses: courses || []
         });
@@ -37,7 +38,10 @@ export function SemesterEditor({
                             value={quarter}
                             onChange={(
                                 event: React.ChangeEvent<HTMLSelectElement>
-                            ) => setQuarter(event.target.value)}
+                            ) => {
+                                setQuarter(event.target.value);
+                                console.log("Quarter edited");
+                            }}
                         >
                             <option value="Fall">Fall</option>
                             <option value="Winter">Winter</option>
@@ -52,7 +56,10 @@ export function SemesterEditor({
                             value={year}
                             onChange={(
                                 event: React.ChangeEvent<HTMLInputElement>
-                            ) => setYear(event.target.value)}
+                            ) => {
+                                setYear(event.target.value);
+                                console.log("Year edited");
+                            }}
                         />
                     </Col>
                 </Form.Group>
