@@ -15,10 +15,10 @@
         at div
         at div
         at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Container.js:24:3
-        at SemesterList (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/SemesterList.tsx:7:5)
+        at SemesterList (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/SemesterList.tsx:8:5)
         at div
         at div
-        at PlanView (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/PlanView.tsx:8:5)
+        at PlanView (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/PlanView.tsx:14:5)
         at div
         at div
         at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Stack.js:23:7
@@ -36,7 +36,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (163 ms)
+  ✕ renders the course name somewhere (182 ms)
 
   ● renders the course name somewhere
 
@@ -123,11 +123,39 @@ FAIL src/App.test.tsx
                           [36m<div[39m
                             [33mclass[39m=[32m"col"[39m
                           [36m>[39m
-                            [36m<h4>[39m
-                              [0mFall[0m
-                              [0m [0m
-                              [0m2022[0m
-                            [36m</h4>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"Semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"row"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h4>[39m
+                                      [0mFall[0m
+                                      [0m [0m
+                                      [0m2022[0m
+                                    [36m</h4>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"Edit-button"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
                             [36m<div>[39m
                               [36m<table[39m
                                 [33mclass[39m=[32m"Course-table"[39m
@@ -179,11 +207,39 @@ FAIL src/App.test.tsx
                           [36m<div[39m
                             [33mclass[39m=[32m"col"[39m
                           [36m>[39m
-                            [36m<h4>[39m
-                              [0mSpring[0m
-                              [0m [0m
-                              [0m2023[0m
-                            [36m</h4>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"Semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"row"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h4>[39m
+                                      [0mSpring[0m
+                                      [0m [0m
+                                      [0m2023[0m
+                                    [36m</h4>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"Edit-button"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
                             [36m<div>[39m
                               [36m<table[39m
                                 [33mclass[39m=[32m"Course-table"[39m
@@ -226,41 +282,6 @@ FAIL src/App.test.tsx
                           [36m</div>[39m
                         [36m</div>[39m
                       [36m</div>[39m
-                    [36m</div>[39m
-                  [36m</div>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
-              [36m>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"Plan"[39m
-                [36m>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"Plan-header"[39m
-                  [36m>[39m
-                    [36m<h3>[39m
-                      [0mDefault Plan 2[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"Edit-button"[39m
-                    [36m>[39m
-                      [36m<div>[39m
-                        [36m<button[39m
-                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
-                          [33mtype[39m=[32m"button"[39m
-                        [36m>[39m
-                          [0mEdit[0m
-                        [36m</button>[39m
-                      [36m</div>[39m
-                    [36m</div>[39m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"Semester-list"[39m
-                  [36m>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"Semester-list container"[39m
-                    [36m>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"Semester"[39m
                       [36m>[39m
@@ -270,11 +291,39 @@ FAIL src/App.test.tsx
                           [36m<div[39m
                             [33mclass[39m=[32m"col"[39m
                           [36m>[39m
-                            [36m<h4>[39m
-                              [0mWinter[0m
-                              [0m [0m
-                              [0m2023[0m
-                            [36m</h4>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"Semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"row"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h4>[39m
+                                      [0mWinter[0m
+                                      [0m [0m
+                                      [0m2023[0m
+                                    [36m</h4>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"Edit-button"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
                             [36m<div>[39m
                               [36m<table[39m
                                 [33mclass[39m=[32m"Course-table"[39m
@@ -326,11 +375,39 @@ FAIL src/App.test.tsx
                           [36m<div[39m
                             [33mclass[39m=[32m"col"[39m
                           [36m>[39m
-                            [36m<h4>[39m
-                              [0mSummer[0m
-                              [0m [0m
-                              [0m2023[0m
-                            [36m</h4>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"Semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"row"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h4>[39m
+                                      [0mSummer[0m
+                                      [0m [0m
+                                      [0m2023[0m
+                                    [36m</h4>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"Edit-button"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
                             [36m<div>[39m
                               [36m<table[39m
                                 [33mclass[39m=[32m"Course-table"[39m
@@ -421,19 +498,19 @@ FAIL src/App.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   35.29 |     6.25 |   33.33 |   36.17 |                   
+All files            |   40.67 |    11.11 |   35.89 |   40.74 |                   
  src                 |   41.17 |        0 |      20 |   46.15 |                   
   App.tsx            |   41.17 |        0 |      20 |   46.15 | 16-30             
- src/components      |   32.35 |     8.33 |   39.13 |   32.35 |                   
+ src/components      |   40.47 |    14.28 |   41.37 |   39.02 |                   
   AddPlanModal.tsx   |      40 |      100 |   33.33 |      40 | 16-21,40          
   CourseList.tsx     |     100 |      100 |     100 |     100 |                   
   PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-51             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
-  PlanView.tsx       |   66.66 |       50 |      50 |   66.66 | 19                
+  PlanView.tsx       |   54.54 |       25 |    37.5 |      50 | 26-43             
   RecordControls.tsx |     100 |      100 |     100 |     100 |                   
   SemesterEditor.tsx |       0 |        0 |       0 |       0 | 17-65             
   SemesterList.tsx   |     100 |      100 |     100 |     100 |                   
-  SemesterView.tsx   |       0 |        0 |       0 |       0 | 17-23             
+  SemesterView.tsx   |   66.66 |       50 |      50 |   66.66 | 19                
  src/interfaces      |       0 |        0 |       0 |       0 |                   
   course.ts          |       0 |        0 |       0 |       0 |                   
   plan.ts            |       0 |        0 |       0 |       0 |                   
@@ -442,5 +519,5 @@ All files            |   35.29 |     6.25 |   33.33 |   36.17 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.652 s
+Time:        2.84 s
 Ran all test suites.
