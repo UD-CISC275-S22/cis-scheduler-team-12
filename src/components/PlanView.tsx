@@ -8,7 +8,7 @@ import { Semester } from "../interfaces/semester";
 
 const DEFAULT_SEMESTERS = defaults.map((plan) =>
     plan.semesters.map((semester): Semester => ({ ...semester }))
-)[0];
+);
 
 export function PlanView({
     plan,
@@ -19,8 +19,12 @@ export function PlanView({
     deletePlan: (id: number) => void;
     editPlan: (id: number, newPlan: Plan) => void;
 }): JSX.Element {
+    console.log(DEFAULT_SEMESTERS);
+    console.log(DEFAULT_SEMESTERS[0]);
     const [editing, setEditing] = useState<boolean>(false);
-    const [semesters, setSemesters] = useState<Semester[]>(DEFAULT_SEMESTERS);
+    const [semesters, setSemesters] = useState<Semester[]>(
+        DEFAULT_SEMESTERS[0]
+    );
 
     function editSemester(id: number, newSemester: Semester) {
         setSemesters(
@@ -29,6 +33,7 @@ export function PlanView({
                     semester.id === id ? newSemester : semester
             )
         );
+        console.log("Edited semester");
     }
 
     function deleteSemester(id: number) {
@@ -37,6 +42,7 @@ export function PlanView({
                 (semester: Semester): boolean => semester.id !== id
             )
         );
+        console.log("Deleted semester");
     }
 
     function changeEditing() {
@@ -62,7 +68,7 @@ export function PlanView({
             </div>
             <div className="Semester-list">
                 <SemesterList
-                    semesters={plan.semesters}
+                    semesters={semesters}
                     editSemester={editSemester}
                     deleteSemester={deleteSemester}
                 ></SemesterList>
