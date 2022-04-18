@@ -48,13 +48,7 @@
                         "required": false
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Default Plan 2",
-        "semesters": [
+            },
             {
                 "quarter": "Winter",
                 "year": "2023",

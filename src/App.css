@@ -69,16 +69,15 @@
     border: 1px solid #aaaaaa;
     text-align: left;
     display: block;
-    margin: 8px;
 }
 
 .Course-table th {
     border: 1px solid #bbb;
-    padding: 10px 40px 8px 4px;
+    padding: 10px 80px 8px 4px;
 }
 
 .Course-table td {
-    padding: 10px 40px 8px 4px;
+    padding: 10px 2px 8px 4px;
     border: 1px solid #bbb;
 }
 
