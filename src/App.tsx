@@ -27,7 +27,7 @@ function App(): JSX.Element {
             (plan: Plan): boolean => plan.name === newPlan.name
         );
         if (existing === undefined) {
-            setPlans([...plans, newPlan]);
+            setPlans([...plans, { ...newPlan, id: plans.length + 1 }]);
         }
     }
     const handleCloseAddModal = () => setShowAddModal(false);

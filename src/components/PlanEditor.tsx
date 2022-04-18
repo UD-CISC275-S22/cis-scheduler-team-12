@@ -16,7 +16,6 @@ export function PlanEditor({
 }): JSX.Element {
     const [name, setName] = useState<string>(plan.name);
     const [semesters] = useState<Semester[]>(plan.semesters);
-
     function save() {
         editPlan(plan.id, {
             ...plan,

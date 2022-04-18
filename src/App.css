@@ -53,6 +53,10 @@
     padding-right: 1rem;
 }
 
+.Semester-header {
+    display: inline-flex;
+}
+
 .Plan {
     grid-auto-flow: column;
 }
@@ -63,6 +67,7 @@
 
 .Edit-button {
     padding-left: 1rem;
+    display: inline;
 }
 
 .Course-table {
