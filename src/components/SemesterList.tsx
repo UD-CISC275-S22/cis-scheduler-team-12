@@ -2,11 +2,16 @@ import React from "react";
 import { Semester } from "../interfaces/semester";
 import { Container, Row, Col } from "react-bootstrap";
 import { CourseList } from "./CourseList";
+import { SemesterView } from "./SemesterView";
 
 export function SemesterList({
-    semesters
+    semesters,
+    editSemester,
+    deleteSemester
 }: {
     semesters: Semester[];
+    editSemester: (id: number, newSemester: Semester) => void;
+    deleteSemester: (id: number) => void;
 }): JSX.Element {
     return (
         <Container className="Semester-list">
@@ -14,9 +19,11 @@ export function SemesterList({
                 <div key={semester.id} className="Semester">
                     <Row>
                         <Col>
-                            <h4>
-                                {semester.quarter} {semester.year}
-                            </h4>
+                            <SemesterView
+                                semester={semester}
+                                deleteSemester={deleteSemester}
+                                editSemester={editSemester}
+                            ></SemesterView>
                             <div>
                                 <CourseList
                                     courses={semester.courses}
