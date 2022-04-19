@@ -3,6 +3,8 @@ import { Semester } from "../interfaces/semester";
 import { SemesterEditor } from "./SemesterEditor";
 import { Container, Row, Col } from "react-bootstrap";
 import { RecordControls } from "./RecordControls";
+import { CourseEditor } from "./CourseEditor";
+import { Course } from "../interfaces/course";
 
 export function SemesterView({
     semester,
@@ -19,13 +21,23 @@ export function SemesterView({
         setEditing(!editing);
     }
 
+    function changeCourses(newCourses: Course[]) {
+        editSemester(semester.id, { ...semester, courses: newCourses });
+    }
+
     return editing ? (
-        <SemesterEditor
-            changeEditing={changeEditing}
-            semester={semester}
-            editSemester={editSemester}
-            deleteSemester={deleteSemester}
-        ></SemesterEditor>
+        <Container>
+            <SemesterEditor
+                changeEditing={changeEditing}
+                semester={semester}
+                editSemester={editSemester}
+                deleteSemester={deleteSemester}
+            ></SemesterEditor>
+            <CourseEditor
+                courses={semester.courses}
+                setCourses={changeCourses}
+            ></CourseEditor>
+        </Container>
     ) : (
         <Container className="Semester-view">
             <div key={semester.id} className="Semester">
