@@ -33,7 +33,7 @@ export function PlanView({
                     semester.id === id ? newSemester : semester
             )
         );
-        console.log("Edited semester");
+        console.log("Edited semester with id %d", id);
     }
 
     function deleteSemester(id: number) {
@@ -42,7 +42,7 @@ export function PlanView({
                 (semester: Semester): boolean => semester.id !== id
             )
         );
-        console.log("Deleted semester");
+        console.log("Deleted semester with id %d", id);
     }
 
     function changeEditing() {

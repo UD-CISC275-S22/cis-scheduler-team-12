@@ -20,6 +20,7 @@ function App(): JSX.Element {
 
     function deletePlan(id: number) {
         setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
+        console.log("Edited plan with id %d", id);
     }
 
     function addPlan(newPlan: Plan) {
@@ -28,6 +29,7 @@ function App(): JSX.Element {
         );
         if (existing === undefined) {
             setPlans([...plans, { ...newPlan, id: plans.length + 1 }]);
+            console.log("Created new plan with id %d", plans.length + 1);
         }
     }
     const handleCloseAddModal = () => setShowAddModal(false);
