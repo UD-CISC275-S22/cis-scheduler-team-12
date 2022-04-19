@@ -44,6 +44,7 @@
 .Semester-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .Semester {
@@ -56,7 +57,10 @@
 .Semester-header {
     display: inline-flex;
 }
-
+.Semester col {
+    display: inline-flex;
+    justify-content: center;
+}
 .Plan {
     grid-auto-flow: column;
 }
@@ -82,7 +86,7 @@
 }
 
 .Course-table td {
-    padding: 10px 2px 8px 4px;
+    padding: 8px 10px 8px 8px;
     border: 1px solid #bbb;
 }
 

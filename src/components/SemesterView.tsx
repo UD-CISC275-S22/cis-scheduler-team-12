@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Semester } from "../interfaces/semester";
 import { SemesterEditor } from "./SemesterEditor";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { RecordControls } from "./RecordControls";
 
 export function SemesterView({
@@ -30,16 +30,18 @@ export function SemesterView({
         <Container className="Semester-view">
             <div key={semester.id} className="Semester">
                 <Row>
-                    <Col>
-                        <h4>
-                            {semester.quarter} {semester.year}
-                        </h4>
-                        <div className="Edit-button">
-                            <RecordControls
-                                changeEditing={changeEditing}
-                            ></RecordControls>
+                    <div className="col">
+                        <div className="Semester-header">
+                            <h4>
+                                {semester.quarter} {semester.year}
+                            </h4>
+                            <div className="Edit-button">
+                                <RecordControls
+                                    changeEditing={changeEditing}
+                                ></RecordControls>
+                            </div>
                         </div>
-                    </Col>
+                    </div>
                 </Row>
             </div>
         </Container>

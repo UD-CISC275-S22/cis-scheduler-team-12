@@ -11,7 +11,7 @@ export function AddPlanModal({
     handleClose: () => void;
     addPlan: (newPlan: Plan) => void;
 }) {
-    const [name, setName] = useState<string>("");
+    const [name, setName] = useState<string>("New Plan");
     function saveChanges() {
         addPlan({
             id: 0,
