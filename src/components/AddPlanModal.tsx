@@ -5,10 +5,12 @@ import { Plan } from "../interfaces/plan";
 export function AddPlanModal({
     show,
     handleClose,
+    showPlanNameError,
     addPlan
 }: {
     show: boolean;
     handleClose: () => void;
+    showPlanNameError: boolean;
     addPlan: (newPlan: Plan) => void;
 }) {
     const [name, setName] = useState<string>("New Plan");
@@ -18,6 +20,9 @@ export function AddPlanModal({
             name: name,
             semesters: []
         });
+        if (showPlanNameError === true) {
+            console.log("showPlanNameError is READ AS true");
+        } else console.log("showPlanNameError is READ AS false");
         handleClose();
     }
     return (
@@ -40,6 +45,14 @@ export function AddPlanModal({
                                 ) => setName(event.target.value)}
                             />
                         </Col>
+                        <Modal
+                            show={showPlanNameError}
+                            onHide={handleClose}
+                            animation={false}
+                        >
+                            New plan name cannot be the same as existing plan
+                            name
+                        </Modal>
                     </Form.Group>
                 </Modal.Body>
                 <Modal.Footer>

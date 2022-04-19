@@ -9,7 +9,8 @@ import { Button } from "react-bootstrap";
 export const DEFAULTS = defaults.map((plan): Plan => ({ ...plan }));
 
 function App(): JSX.Element {
-    const [showAddModal, setShowAddModal] = useState(false);
+    const [showAddModal, setShowAddModal] = useState<boolean>(false);
+    const [showPlanNameError, setShowPlanNameError] = useState<boolean>(false);
     const [plans, setPlans] = useState<Plan[]>(DEFAULTS);
 
     function editPlan(id: number, newPlan: Plan) {
@@ -30,6 +31,10 @@ function App(): JSX.Element {
         if (existing === undefined) {
             setPlans([...plans, { ...newPlan, id: plans.length + 1 }]);
             console.log("Created new plan with id %d", plans.length + 1);
+            console.log(newPlan.semesters);
+        } else {
+            setShowPlanNameError(true);
+            console.log("showPlanNameError is SET TO true");
         }
     }
     const handleCloseAddModal = () => setShowAddModal(false);
@@ -66,6 +71,7 @@ function App(): JSX.Element {
                     <AddPlanModal
                         show={showAddModal}
                         handleClose={handleCloseAddModal}
+                        showPlanNameError={showPlanNameError}
                         addPlan={addPlan}
                     ></AddPlanModal>
                 </div>
