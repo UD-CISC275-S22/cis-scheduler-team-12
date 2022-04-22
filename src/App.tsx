@@ -28,17 +28,21 @@ function App(): JSX.Element {
         const existing = plans.find(
             (plan: Plan): boolean => plan.name === newPlan.name
         );
-        if (existing === undefined) {
+        if (existing !== undefined) {
+            setShowPlanNameError(true);
+            console.log("showPlanNameError is SET TO true");
+        } else {
             setPlans([...plans, { ...newPlan, id: plans.length + 1 }]);
             console.log("Created new plan with id %d", plans.length + 1);
             console.log(newPlan.semesters);
-        } else {
-            setShowPlanNameError(true);
-            console.log("showPlanNameError is SET TO true");
         }
     }
-    const handleCloseAddModal = () => setShowAddModal(false);
+    const handleCloseAddModal = () => {
+        setShowAddModal(false);
+        setShowPlanNameError(false);
+    };
     const handleShowAddModal = () => setShowAddModal(true);
+
     return (
         <div className="App">
             <header className="App-header">

@@ -15,16 +15,19 @@ export function AddPlanModal({
 }) {
     const [name, setName] = useState<string>("New Plan");
     function saveChanges() {
-        addPlan({
-            id: 0,
-            name: name,
-            semesters: []
-        });
         if (showPlanNameError === true) {
             console.log("showPlanNameError is READ AS true");
-        } else console.log("showPlanNameError is READ AS false");
-        handleClose();
+        } else {
+            console.log("showPlanNameError is READ AS false");
+            addPlan({
+                id: 0,
+                name: name,
+                semesters: []
+            });
+            handleClose();
+        }
     }
+
     return (
         <div>
             <Modal show={show} onHide={handleClose} animation={false}>
@@ -45,14 +48,9 @@ export function AddPlanModal({
                                 ) => setName(event.target.value)}
                             />
                         </Col>
-                        <Modal
-                            show={showPlanNameError}
-                            onHide={handleClose}
-                            animation={false}
-                        >
-                            New plan name cannot be the same as existing plan
-                            name
-                        </Modal>
+                        {showPlanNameError && (
+                            <div>Plan name already exists.</div>
+                        )}
                     </Form.Group>
                 </Modal.Body>
                 <Modal.Footer>
