@@ -48,7 +48,7 @@ export function CourseEditor({
     }
 
     return (
-        <table className="Course-table">
+        <table className="Course-editor">
             <tr>
                 <th>Course Code</th>
                 <th>Course Name</th>
