@@ -20,7 +20,14 @@ export function CourseEditor({
                         : course
             )
         );
-        setCourses(courseList);
+        setCourses(
+            courses.map(
+                (course: Course): Course =>
+                    course.code === oldCode
+                        ? { ...course, code: newCode }
+                        : course
+            )
+        );
     }
 
     function changeTitle(oldCode: string, newTitle: string) {
@@ -32,7 +39,14 @@ export function CourseEditor({
                         : course
             )
         );
-        setCourses(courseList);
+        setCourses(
+            courses.map(
+                (course: Course): Course =>
+                    course.code === oldCode
+                        ? { ...course, title: newTitle }
+                        : course
+            )
+        );
     }
 
     function changeCredits(oldCode: string, newCredits: number) {
@@ -44,11 +58,18 @@ export function CourseEditor({
                         : course
             )
         );
-        setCourses(courseList);
+        setCourses(
+            courses.map(
+                (course: Course): Course =>
+                    course.code === oldCode
+                        ? { ...course, credits: newCredits }
+                        : course
+            )
+        );
     }
 
     return (
-        <table className="Course-editor">
+        <table width="500" className="Course-editor">
             <tr>
                 <th>Course Code</th>
                 <th>Course Name</th>
@@ -56,7 +77,7 @@ export function CourseEditor({
             </tr>
             {courseList.map((course: Course) => (
                 <tr key={course.code}>
-                    <td>
+                    <td width="30%">
                         <Form.Control
                             type="string"
                             value={course.code}
@@ -68,7 +89,7 @@ export function CourseEditor({
                             }}
                         />
                     </td>
-                    <td>
+                    <td width="50%">
                         <Form.Control
                             type="string"
                             value={course.title}
@@ -80,7 +101,7 @@ export function CourseEditor({
                             }}
                         />
                     </td>
-                    <td>
+                    <td width="20%">
                         <Form.Control
                             type="number"
                             value={course.credits}

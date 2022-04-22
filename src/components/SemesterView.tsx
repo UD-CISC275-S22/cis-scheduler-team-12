@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { RecordControls } from "./RecordControls";
 import { CourseEditor } from "./CourseEditor";
 import { Course } from "../interfaces/course";
+import { CourseList } from "./CourseList";
 
 export function SemesterView({
     semester,
@@ -16,6 +17,7 @@ export function SemesterView({
     editSemester: (id: number, newSemester: Semester) => void;
 }): JSX.Element {
     const [editing, setEditing] = useState<boolean>(false);
+    const [semesterState, setSemesterState] = useState<Semester>(semester);
 
     function changeEditing() {
         setEditing(!editing);
@@ -23,6 +25,7 @@ export function SemesterView({
 
     function changeCourses(newCourses: Course[]) {
         editSemester(semester.id, { ...semester, courses: newCourses });
+        setSemesterState({ ...semester, courses: newCourses });
     }
 
     return editing ? (
@@ -53,6 +56,9 @@ export function SemesterView({
                         </div>
                     </Col>
                 </Row>
+            </div>
+            <div>
+                <CourseList courses={semesterState.courses}></CourseList>
             </div>
         </Container>
     );
