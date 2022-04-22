@@ -24,6 +24,11 @@ export function SemesterList({
                                 deleteSemester={deleteSemester}
                                 editSemester={editSemester}
                             ></SemesterView>
+                            <div>
+                                <CourseList
+                                    courses={semester.courses}
+                                ></CourseList>
+                            </div>
                         </Col>
                     </Row>
                 </div>
