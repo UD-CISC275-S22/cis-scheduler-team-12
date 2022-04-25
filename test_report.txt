@@ -81,7 +81,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (178 ms)
+  ✕ renders the course name somewhere (175 ms)
 
   ● renders the course name somewhere
 
@@ -184,21 +184,25 @@ FAIL src/App.test.tsx
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
                                   [36m>[39m
-                                    [36m<h4>[39m
-                                      [0mFall[0m
-                                      [0m [0m
-                                      [0m2022[0m
-                                    [36m</h4>[39m
                                     [36m<div[39m
-                                      [33mclass[39m=[32m"Edit-button"[39m
+                                      [33mclass[39m=[32m"Semester-header"[39m
                                     [36m>[39m
-                                      [36m<div>[39m
-                                        [36m<button[39m
-                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
-                                          [33mtype[39m=[32m"button"[39m
-                                        [36m>[39m
-                                          [0mEdit[0m
-                                        [36m</button>[39m
+                                      [36m<h4>[39m
+                                        [0mFall[0m
+                                        [0m [0m
+                                        [0m2022[0m
+                                      [36m</h4>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Edit-button"[39m
+                                      [36m>[39m
+                                        [36m<div>[39m
+                                          [36m<button[39m
+                                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                            [33mtype[39m=[32m"button"[39m
+                                          [36m>[39m
+                                            [0mEdit[0m
+                                          [36m</button>[39m
+                                        [36m</div>[39m
                                       [36m</div>[39m
                                     [36m</div>[39m
                                   [36m</div>[39m
@@ -207,7 +211,7 @@ FAIL src/App.test.tsx
                               [36m<div>[39m
                                 [36m<table[39m
                                   [33mclass[39m=[32m"Course-table"[39m
-                                  [33mwidth[39m=[32m"500"[39m
+                                  [33mwidth[39m=[32m"auto"[39m
                                 [36m>[39m
                                   [36m<tr>[39m
                                     [36m<th>[39m
@@ -281,21 +285,25 @@ FAIL src/App.test.tsx
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
                                   [36m>[39m
-                                    [36m<h4>[39m
-                                      [0mSpring[0m
-                                      [0m [0m
-                                      [0m2023[0m
-                                    [36m</h4>[39m
                                     [36m<div[39m
-                                      [33mclass[39m=[32m"Edit-button"[39m
+                                      [33mclass[39m=[32m"Semester-header"[39m
                                     [36m>[39m
-                                      [36m<div>[39m
-                                        [36m<button[39m
-                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
-                                          [33mtype[39m=[32m"button"[39m
-                                        [36m>[39m
-                                          [0mEdit[0m
-                                        [36m</button>[39m
+                                      [36m<h4>[39m
+                                        [0mSpring[0m
+                                        [0m [0m
+                                        [0m2023[0m
+                                      [36m</h4>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Edit-button"[39m
+                                      [36m>[39m
+                                        [36m<div>[39m
+                                          [36m<button[39m
+                                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                            [33mtype[39m=[32m"button"[39m
+                                          [36m>[39m
+                                            [0mEdit[0m
+                                          [36m</button>[39m
+                                        [36m</div>[39m
                                       [36m</div>[39m
                                     [36m</div>[39m
                                   [36m</div>[39m
@@ -304,7 +312,7 @@ FAIL src/App.test.tsx
                               [36m<div>[39m
                                 [36m<table[39m
                                   [33mclass[39m=[32m"Course-table"[39m
-                                  [33mwidth[39m=[32m"500"[39m
+                                  [33mwidth[39m=[32m"auto"[39m
                                 [36m>[39m
                                   [36m<tr>[39m
                                     [36m<th>[39m
@@ -378,21 +386,25 @@ FAIL src/App.test.tsx
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
                                   [36m>[39m
-                                    [36m<h4>[39m
-                                      [0mWinter[0m
-                                      [0m [0m
-                                      [0m2023[0m
-                                    [36m</h4>[39m
                                     [36m<div[39m
-                                      [33mclass[39m=[32m"Edit-button"[39m
+                                      [33mclass[39m=[32m"Semester-header"[39m
                                     [36m>[39m
-                                      [36m<div>[39m
-                                        [36m<button[39m
-                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
-                                          [33mtype[39m=[32m"button"[39m
-                                        [36m>[39m
-                                          [0mEdit[0m
-                                        [36m</button>[39m
+                                      [36m<h4>[39m
+                                        [0mWinter[0m
+                                        [0m [0m
+                                        [0m2023[0m
+                                      [36m</h4>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Edit-button"[39m
+                                      [36m>[39m
+                                        [36m<div>[39m
+                                          [36m<button[39m
+                                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                            [33mtype[39m=[32m"button"[39m
+                                          [36m>[39m
+                                            [0mEdit[0m
+                                          [36m</button>[39m
+                                        [36m</div>[39m
                                       [36m</div>[39m
                                     [36m</div>[39m
                                   [36m</div>[39m
@@ -401,7 +413,7 @@ FAIL src/App.test.tsx
                               [36m<div>[39m
                                 [36m<table[39m
                                   [33mclass[39m=[32m"Course-table"[39m
-                                  [33mwidth[39m=[32m"500"[39m
+                                  [33mwidth[39m=[32m"auto"[39m
                                 [36m>[39m
                                   [36m<tr>[39m
                                     [36m<th>[39m
@@ -475,21 +487,25 @@ FAIL src/App.test.tsx
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
                                   [36m>[39m
-                                    [36m<h4>[39m
-                                      [0mSummer[0m
-                                      [0m [0m
-                                      [0m2023[0m
-                                    [36m</h4>[39m
                                     [36m<div[39m
-                                      [33mclass[39m=[32m"Edit-button"[39m
+                                      [33mclass[39m=[32m"Semester-header"[39m
                                     [36m>[39m
-                                      [36m<div>[39m
-                                        [36m<button[39m
-                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
-                                          [33mtype[39m=[32m"button"[39m
-                                        [36m>[39m
-                                          [0mEdit[0m
-                                        [36m</button>[39m
+                                      [36m<h4>[39m
+                                        [0mSummer[0m
+                                        [0m [0m
+                                        [0m2023[0m
+                                      [36m</h4>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Edit-button"[39m
+                                      [36m>[39m
+                                        [36m<div>[39m
+                                          [36m<button[39m
+                                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                            [33mtype[39m=[32m"button"[39m
+                                          [36m>[39m
+                                            [0mEdit[0m
+                                          [36m</button>[39m
+                                        [36m</div>[39m
                                       [36m</div>[39m
                                     [36m</div>[39m
                                   [36m</div>[39m
@@ -498,7 +514,7 @@ FAIL src/App.test.tsx
                               [36m<div>[39m
                                 [36m<table[39m
                                   [33mclass[39m=[32m"Course-table"[39m
-                                  [33mwidth[39m=[32m"500"[39m
+                                  [33mwidth[39m=[32m"auto"[39m
                                 [36m>[39m
                                   [36m<tr>[39m
                                     [36m<th>[39m
@@ -621,5 +637,5 @@ All files            |      28 |     6.66 |   23.33 |   27.36 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.698 s
+Time:        2.812 s
 Ran all test suites.
