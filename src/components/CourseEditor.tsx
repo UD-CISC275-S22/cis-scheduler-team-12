@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 
+const DEFAULT_COURSE: Course = {
+    id: 0,
+    code: "CISC101",
+    title: "new course",
+    credits: 3,
+    prereqs: [],
+    completed: false,
+    required: false
+};
+
 export function CourseEditor({
     courses,
     setCourses
@@ -69,6 +79,15 @@ export function CourseEditor({
         );
     }
 
+    function addCourse() {
+        setCourseList(
+            courses.concat({ ...DEFAULT_COURSE, id: courses.length + 1 })
+        );
+        setCourses(
+            courses.concat({ ...DEFAULT_COURSE, id: courses.length + 1 })
+        );
+    }
+
     return (
         <table width="500" className="Course-editor">
             <tr>
@@ -78,7 +97,7 @@ export function CourseEditor({
             </tr>
             {courseList.map((course: Course) => (
                 <tr key={course.id}>
-                    <td width="25%">
+                    <td>
                         <Form.Control
                             type="string"
                             value={course.code}
@@ -90,7 +109,7 @@ export function CourseEditor({
                             }}
                         />
                     </td>
-                    <td width="50%">
+                    <td>
                         <Form.Control
                             type="string"
                             value={course.title}
@@ -102,7 +121,7 @@ export function CourseEditor({
                             }}
                         />
                     </td>
-                    <td width="15%">
+                    <td>
                         <Form.Control
                             type="number"
                             value={course.credits}
@@ -117,7 +136,7 @@ export function CourseEditor({
                             }}
                         />
                     </td>
-                    <td width="10%">
+                    <td>
                         <Button
                             onClick={() => deleteCourse(course.id)}
                             variant="danger"
@@ -128,6 +147,15 @@ export function CourseEditor({
                     </td>
                 </tr>
             ))}
+            <tr>
+                <Button
+                    onClick={() => addCourse()}
+                    variant="success"
+                    className="m-4"
+                >
+                    Add Course
+                </Button>
+            </tr>
         </table>
     );
 }
