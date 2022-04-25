@@ -37,7 +37,7 @@ export function SemesterView({
                 deleteSemester={deleteSemester}
             ></SemesterEditor>
             <CourseEditor
-                courses={semester.courses}
+                courses={semesterState.courses}
                 setCourses={changeCourses}
             ></CourseEditor>
         </Container>

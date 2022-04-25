@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 
 export function CourseEditor({
@@ -60,6 +60,15 @@ export function CourseEditor({
         );
     }
 
+    function deleteCourse(id: number) {
+        setCourseList(
+            courses.filter((course: Course): boolean => course.id !== id)
+        );
+        setCourses(
+            courses.filter((course: Course): boolean => course.id !== id)
+        );
+    }
+
     return (
         <table width="500" className="Course-editor">
             <tr>
@@ -69,7 +78,7 @@ export function CourseEditor({
             </tr>
             {courseList.map((course: Course) => (
                 <tr key={course.id}>
-                    <td width="30%">
+                    <td width="25%">
                         <Form.Control
                             type="string"
                             value={course.code}
@@ -93,7 +102,7 @@ export function CourseEditor({
                             }}
                         />
                     </td>
-                    <td width="20%">
+                    <td width="15%">
                         <Form.Control
                             type="number"
                             value={course.credits}
@@ -107,6 +116,15 @@ export function CourseEditor({
                                 console.log("Course credits edited");
                             }}
                         />
+                    </td>
+                    <td width="10%">
+                        <Button
+                            onClick={() => deleteCourse(course.id)}
+                            variant="danger"
+                            className="me-8"
+                        >
+                            Delete
+                        </Button>
                     </td>
                 </tr>
             ))}
