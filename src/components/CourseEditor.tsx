@@ -11,49 +11,41 @@ export function CourseEditor({
 }): JSX.Element {
     const [courseList, setCourseList] = useState<Course[]>(courses);
 
-    function changeCode(oldCode: string, newCode: string) {
+    function changeCode(id: number, newCode: string) {
         setCourseList(
             courses.map(
                 (course: Course): Course =>
-                    course.code === oldCode
-                        ? { ...course, code: newCode }
-                        : course
+                    course.id === id ? { ...course, code: newCode } : course
             )
         );
         setCourses(
             courses.map(
                 (course: Course): Course =>
-                    course.code === oldCode
-                        ? { ...course, code: newCode }
-                        : course
+                    course.id === id ? { ...course, code: newCode } : course
             )
         );
     }
 
-    function changeTitle(oldCode: string, newTitle: string) {
+    function changeTitle(id: number, newTitle: string) {
         setCourseList(
             courses.map(
                 (course: Course): Course =>
-                    course.code === oldCode
-                        ? { ...course, title: newTitle }
-                        : course
+                    course.id === id ? { ...course, title: newTitle } : course
             )
         );
         setCourses(
             courses.map(
                 (course: Course): Course =>
-                    course.code === oldCode
-                        ? { ...course, title: newTitle }
-                        : course
+                    course.id === id ? { ...course, title: newTitle } : course
             )
         );
     }
 
-    function changeCredits(oldCode: string, newCredits: number) {
+    function changeCredits(id: number, newCredits: number) {
         setCourseList(
             courses.map(
                 (course: Course): Course =>
-                    course.code === oldCode
+                    course.id === id
                         ? { ...course, credits: newCredits }
                         : course
             )
@@ -61,7 +53,7 @@ export function CourseEditor({
         setCourses(
             courses.map(
                 (course: Course): Course =>
-                    course.code === oldCode
+                    course.id === id
                         ? { ...course, credits: newCredits }
                         : course
             )
@@ -76,7 +68,7 @@ export function CourseEditor({
                 <th>Credits</th>
             </tr>
             {courseList.map((course: Course) => (
-                <tr key={course.code}>
+                <tr key={course.id}>
                     <td width="30%">
                         <Form.Control
                             type="string"
@@ -84,7 +76,7 @@ export function CourseEditor({
                             onChange={(
                                 event: React.ChangeEvent<HTMLInputElement>
                             ) => {
-                                changeCode(course.code, event.target.value);
+                                changeCode(course.id, event.target.value);
                                 console.log("Course code edited");
                             }}
                         />
@@ -96,7 +88,7 @@ export function CourseEditor({
                             onChange={(
                                 event: React.ChangeEvent<HTMLInputElement>
                             ) => {
-                                changeTitle(course.code, event.target.value);
+                                changeTitle(course.id, event.target.value);
                                 console.log("Course title edited");
                             }}
                         />
@@ -109,7 +101,7 @@ export function CourseEditor({
                                 event: React.ChangeEvent<HTMLInputElement>
                             ) => {
                                 changeCredits(
-                                    course.code,
+                                    course.id,
                                     parseInt(event.target.value, 10)
                                 );
                                 console.log("Course credits edited");

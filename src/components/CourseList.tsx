@@ -10,7 +10,7 @@ export function CourseList({ courses }: { courses: Course[] }): JSX.Element {
                 <th>Credits</th>
             </tr>
             {courses.map((course: Course) => (
-                <tr key={course.code}>
+                <tr key={course.id}>
                     <td width="20%">{course.code}</td>
                     <td width="50%">{course.title}</td>
                     <td width="30%">{course.credits}</td>
