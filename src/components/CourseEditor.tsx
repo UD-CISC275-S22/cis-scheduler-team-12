@@ -11,76 +11,89 @@ export function CourseEditor({
 }): JSX.Element {
     const [courseList, setCourseList] = useState<Course[]>(courses);
 
-    function changeCode(oldCode: string, newCode: string) {
+    function changeCode(id: number, newCode: string) {
         setCourseList(
             courses.map(
                 (course: Course): Course =>
-                    course.code === oldCode
-                        ? { ...course, code: newCode }
-                        : course
+                    course.id === id ? { ...course, code: newCode } : course
             )
         );
-        setCourses(courseList);
-    }
-
-    function changeTitle(oldCode: string, newTitle: string) {
-        setCourseList(
+        setCourses(
             courses.map(
                 (course: Course): Course =>
-                    course.code === oldCode
-                        ? { ...course, title: newTitle }
-                        : course
+                    course.id === id ? { ...course, code: newCode } : course
             )
         );
-        setCourses(courseList);
     }
 
-    function changeCredits(oldCode: string, newCredits: number) {
+    function changeTitle(id: number, newTitle: string) {
         setCourseList(
             courses.map(
                 (course: Course): Course =>
-                    course.code === oldCode
+                    course.id === id ? { ...course, title: newTitle } : course
+            )
+        );
+        setCourses(
+            courses.map(
+                (course: Course): Course =>
+                    course.id === id ? { ...course, title: newTitle } : course
+            )
+        );
+    }
+
+    function changeCredits(id: number, newCredits: number) {
+        setCourseList(
+            courses.map(
+                (course: Course): Course =>
+                    course.id === id
                         ? { ...course, credits: newCredits }
                         : course
             )
         );
-        setCourses(courseList);
+        setCourses(
+            courses.map(
+                (course: Course): Course =>
+                    course.id === id
+                        ? { ...course, credits: newCredits }
+                        : course
+            )
+        );
     }
 
     return (
-        <table className="Course-editor">
+        <table width="500" className="Course-editor">
             <tr>
                 <th>Course Code</th>
                 <th>Course Name</th>
                 <th>Credits</th>
             </tr>
             {courseList.map((course: Course) => (
-                <tr key={course.code}>
-                    <td>
+                <tr key={course.id}>
+                    <td width="30%">
                         <Form.Control
                             type="string"
                             value={course.code}
                             onChange={(
                                 event: React.ChangeEvent<HTMLInputElement>
                             ) => {
-                                changeCode(course.code, event.target.value);
+                                changeCode(course.id, event.target.value);
                                 console.log("Course code edited");
                             }}
                         />
                     </td>
-                    <td>
+                    <td width="50%">
                         <Form.Control
                             type="string"
                             value={course.title}
                             onChange={(
                                 event: React.ChangeEvent<HTMLInputElement>
                             ) => {
-                                changeTitle(course.code, event.target.value);
+                                changeTitle(course.id, event.target.value);
                                 console.log("Course title edited");
                             }}
                         />
                     </td>
-                    <td>
+                    <td width="20%">
                         <Form.Control
                             type="number"
                             value={course.credits}
@@ -88,7 +101,7 @@ export function CourseEditor({
                                 event: React.ChangeEvent<HTMLInputElement>
                             ) => {
                                 changeCredits(
-                                    course.code,
+                                    course.id,
                                     parseInt(event.target.value, 10)
                                 );
                                 console.log("Course credits edited");

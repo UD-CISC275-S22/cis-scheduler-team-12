@@ -25,29 +25,29 @@ export function SemesterView({
 
     function changeCourses(newCourses: Course[]) {
         editSemester(semester.id, { ...semester, courses: newCourses });
-        setSemesterState({ ...semesterState, courses: newCourses });
+        setSemesterState({ ...semester, courses: newCourses });
     }
 
     return editing ? (
         <Container>
             <SemesterEditor
                 changeEditing={changeEditing}
-                semester={semesterState}
+                semester={semester}
                 editSemester={editSemester}
                 deleteSemester={deleteSemester}
             ></SemesterEditor>
             <CourseEditor
-                courses={semesterState.courses}
+                courses={semester.courses}
                 setCourses={changeCourses}
             ></CourseEditor>
         </Container>
     ) : (
         <Container className="Semester-view">
-            <div key={semesterState.id} className="Semester">
+            <div key={semester.id} className="Semester">
                 <Row>
                     <Col>
                         <h4>
-                            {semesterState.quarter} {semesterState.year}
+                            {semester.quarter} {semester.year}
                         </h4>
                         <div className="Edit-button">
                             <RecordControls
