@@ -51,13 +51,16 @@
         at CourseList (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/CourseList.tsx:4:30)
         at div
         at div
+        at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at SemesterView (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/SemesterView.tsx:11:5)
+        at div
         at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Col.js:72:8
         at div
         at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Row.js:22:3
         at div
         at div
         at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Container.js:24:3
-        at SemesterList (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/SemesterList.tsx:8:5)
+        at SemesterList (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/SemesterList.tsx:7:5)
         at div
         at div
         at PlanView (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/PlanView.tsx:14:5)
@@ -78,7 +81,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (227 ms)
+  ✕ renders the course name somewhere (169 ms)
 
   ● renders the course name somewhere
 
@@ -87,12 +90,16 @@ FAIL src/App.test.tsx
     Here are the matching elements:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<td>[39m
+    [36m<td[39m
+      [33mwidth[39m=[32m"20%"[39m
+    [36m>[39m
       [0mCISC275[0m
     [36m</td>[39m
 
     Ignored nodes: comments, <script />, <style />
-    [36m<td>[39m
+    [36m<td[39m
+      [33mwidth[39m=[32m"20%"[39m
+    [36m>[39m
       [0mCISC275[0m
     [36m</td>[39m
 
@@ -197,45 +204,58 @@ FAIL src/App.test.tsx
                                   [36m</div>[39m
                                 [36m</div>[39m
                               [36m</div>[39m
-                            [36m</div>[39m
-                            [36m<div>[39m
-                              [36m<table[39m
-                                [33mclass[39m=[32m"Course-table"[39m
-                              [36m>[39m
-                                [36m<tr>[39m
-                                  [36m<th>[39m
-                                    [0mCourse Code[0m
-                                  [36m</th>[39m
-                                  [36m<th>[39m
-                                    [0mCourse Name[0m
-                                  [36m</th>[39m
-                                  [36m<th>[39m
-                                    [0mCredits[0m
-                                  [36m</th>[39m
-                                [36m</tr>[39m
-                                [36m<tr>[39m
-                                  [36m<td>[39m
-                                    [0mCISC275[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0mIntroduction to Software Engineering[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0m3[0m
-                                  [36m</td>[39m
-                                [36m</tr>[39m
-                                [36m<tr>[39m
-                                  [36m<td>[39m
-                                    [0mMATH242[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0mAnalytic Geometry and Calculus B[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0m4[0m
-                                  [36m</td>[39m
-                                [36m</tr>[39m
-                              [36m</table>[39m
+                              [36m<div>[39m
+                                [36m<table[39m
+                                  [33mclass[39m=[32m"Course-table"[39m
+                                  [33mwidth[39m=[32m"500"[39m
+                                [36m>[39m
+                                  [36m<tr>[39m
+                                    [36m<th>[39m
+                                      [0mCourse Code[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCourse Name[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCredits[0m
+                                    [36m</th>[39m
+                                  [36m</tr>[39m
+                                  [36m<tr>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"20%"[39m
+                                    [36m>[39m
+                                      [0mCISC275[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"50%"[39m
+                                    [36m>[39m
+                                      [0mIntroduction to Software Engineering[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"30%"[39m
+                                    [36m>[39m
+                                      [0m3[0m
+                                    [36m</td>[39m
+                                  [36m</tr>[39m
+                                  [36m<tr>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"20%"[39m
+                                    [36m>[39m
+                                      [0mMATH242[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"50%"[39m
+                                    [36m>[39m
+                                      [0mAnalytic Geometry and Calculus B[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"30%"[39m
+                                    [36m>[39m
+                                      [0m4[0m
+                                    [36m</td>[39m
+                                  [36m</tr>[39m
+                                [36m</table>[39m
+                              [36m</div>[39m
                             [36m</div>[39m
                           [36m</div>[39m
                         [36m</div>[39m
@@ -281,45 +301,58 @@ FAIL src/App.test.tsx
                                   [36m</div>[39m
                                 [36m</div>[39m
                               [36m</div>[39m
-                            [36m</div>[39m
-                            [36m<div>[39m
-                              [36m<table[39m
-                                [33mclass[39m=[32m"Course-table"[39m
-                              [36m>[39m
-                                [36m<tr>[39m
-                                  [36m<th>[39m
-                                    [0mCourse Code[0m
-                                  [36m</th>[39m
-                                  [36m<th>[39m
-                                    [0mCourse Name[0m
-                                  [36m</th>[39m
-                                  [36m<th>[39m
-                                    [0mCredits[0m
-                                  [36m</th>[39m
-                                [36m</tr>[39m
-                                [36m<tr>[39m
-                                  [36m<td>[39m
-                                    [0mCISC355[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0mComputers, Ethics, and Society[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0m3[0m
-                                  [36m</td>[39m
-                                [36m</tr>[39m
-                                [36m<tr>[39m
-                                  [36m<td>[39m
-                                    [0mENTR456[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0mStartup Experience II[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0m3[0m
-                                  [36m</td>[39m
-                                [36m</tr>[39m
-                              [36m</table>[39m
+                              [36m<div>[39m
+                                [36m<table[39m
+                                  [33mclass[39m=[32m"Course-table"[39m
+                                  [33mwidth[39m=[32m"500"[39m
+                                [36m>[39m
+                                  [36m<tr>[39m
+                                    [36m<th>[39m
+                                      [0mCourse Code[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCourse Name[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCredits[0m
+                                    [36m</th>[39m
+                                  [36m</tr>[39m
+                                  [36m<tr>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"20%"[39m
+                                    [36m>[39m
+                                      [0mCISC355[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"50%"[39m
+                                    [36m>[39m
+                                      [0mComputers, Ethics, and Society[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"30%"[39m
+                                    [36m>[39m
+                                      [0m3[0m
+                                    [36m</td>[39m
+                                  [36m</tr>[39m
+                                  [36m<tr>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"20%"[39m
+                                    [36m>[39m
+                                      [0mENTR456[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"50%"[39m
+                                    [36m>[39m
+                                      [0mStartup Experience II[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"30%"[39m
+                                    [36m>[39m
+                                      [0m3[0m
+                                    [36m</td>[39m
+                                  [36m</tr>[39m
+                                [36m</table>[39m
+                              [36m</div>[39m
                             [36m</div>[39m
                           [36m</div>[39m
                         [36m</div>[39m
@@ -365,45 +398,58 @@ FAIL src/App.test.tsx
                                   [36m</div>[39m
                                 [36m</div>[39m
                               [36m</div>[39m
-                            [36m</div>[39m
-                            [36m<div>[39m
-                              [36m<table[39m
-                                [33mclass[39m=[32m"Course-table"[39m
-                              [36m>[39m
-                                [36m<tr>[39m
-                                  [36m<th>[39m
-                                    [0mCourse Code[0m
-                                  [36m</th>[39m
-                                  [36m<th>[39m
-                                    [0mCourse Name[0m
-                                  [36m</th>[39m
-                                  [36m<th>[39m
-                                    [0mCredits[0m
-                                  [36m</th>[39m
-                                [36m</tr>[39m
-                                [36m<tr>[39m
-                                  [36m<td>[39m
-                                    [0mCISC275[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0mIntroduction to Software Engineering[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0m3[0m
-                                  [36m</td>[39m
-                                [36m</tr>[39m
-                                [36m<tr>[39m
-                                  [36m<td>[39m
-                                    [0mMATH242[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0mAnalytic Geometry and Calculus B[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0m4[0m
-                                  [36m</td>[39m
-                                [36m</tr>[39m
-                              [36m</table>[39m
+                              [36m<div>[39m
+                                [36m<table[39m
+                                  [33mclass[39m=[32m"Course-table"[39m
+                                  [33mwidth[39m=[32m"500"[39m
+                                [36m>[39m
+                                  [36m<tr>[39m
+                                    [36m<th>[39m
+                                      [0mCourse Code[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCourse Name[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCredits[0m
+                                    [36m</th>[39m
+                                  [36m</tr>[39m
+                                  [36m<tr>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"20%"[39m
+                                    [36m>[39m
+                                      [0mCISC275[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"50%"[39m
+                                    [36m>[39m
+                                      [0mIntroduction to Software Engineering[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"30%"[39m
+                                    [36m>[39m
+                                      [0m3[0m
+                                    [36m</td>[39m
+                                  [36m</tr>[39m
+                                  [36m<tr>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"20%"[39m
+                                    [36m>[39m
+                                      [0mMATH242[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"50%"[39m
+                                    [36m>[39m
+                                      [0mAnalytic Geometry and Calculus B[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"30%"[39m
+                                    [36m>[39m
+                                      [0m4[0m
+                                    [36m</td>[39m
+                                  [36m</tr>[39m
+                                [36m</table>[39m
+                              [36m</div>[39m
                             [36m</div>[39m
                           [36m</div>[39m
                         [36m</div>[39m
@@ -449,45 +495,58 @@ FAIL src/App.test.tsx
                                   [36m</div>[39m
                                 [36m</div>[39m
                               [36m</div>[39m
-                            [36m</div>[39m
-                            [36m<div>[39m
-                              [36m<table[39m
-                                [33mclass[39m=[32m"Course-table"[39m
-                              [36m>[39m
-                                [36m<tr>[39m
-                                  [36m<th>[39m
-                                    [0mCourse Code[0m
-                                  [36m</th>[39m
-                                  [36m<th>[39m
-                                    [0mCourse Name[0m
-                                  [36m</th>[39m
-                                  [36m<th>[39m
-                                    [0mCredits[0m
-                                  [36m</th>[39m
-                                [36m</tr>[39m
-                                [36m<tr>[39m
-                                  [36m<td>[39m
-                                    [0mCISC355[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0mComputers, Ethics, and Society[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0m3[0m
-                                  [36m</td>[39m
-                                [36m</tr>[39m
-                                [36m<tr>[39m
-                                  [36m<td>[39m
-                                    [0mENTR456[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0mStartup Experience II[0m
-                                  [36m</td>[39m
-                                  [36m<td>[39m
-                                    [0m3[0m
-                                  [36m</td>[39m
-                                [36m</tr>[39m
-                              [36m</table>[39m
+                              [36m<div>[39m
+                                [36m<table[39m
+                                  [33mclass[39m=[32m"Course-table"[39m
+                                  [33mwidth[39m=[32m"500"[39m
+                                [36m>[39m
+                                  [36m<tr>[39m
+                                    [36m<th>[39m
+                                      [0mCourse Code[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCourse Name[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCredits[0m
+                                    [36m</th>[39m
+                                  [36m</tr>[39m
+                                  [36m<tr>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"20%"[39m
+                                    [36m>[39m
+                                      [0mCISC355[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"50%"[39m
+                                    [36m>[39m
+                                      [0mComputers, Ethics, and Society[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"30%"[39m
+                                    [36m>[39m
+                                      [0m3[0m
+                                    [36m</td>[39m
+                                  [36m</tr>[39m
+                                  [36m<tr>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"20%"[39m
+                                    [36m>[39m
+                                      [0mENTR456[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"50%"[39m
+                                    [36m>[39m
+                                      [0mStartup Experience II[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"30%"[39m
+                                    [36m>[39m
+                                      [0m3[0m
+                                    [36m</td>[39m
+                                  [36m</tr>[39m
+                                [36m</table>[39m
+                              [36m</div>[39m
                             [36m</div>[39m
                           [36m</div>[39m
                         [36m</div>[39m
@@ -540,11 +599,12 @@ FAIL src/App.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |    38.8 |    11.11 |   35.89 |    38.7 |                   
+All files            |   29.67 |     6.66 |   25.92 |   29.06 |                   
  src                 |   36.84 |        0 |      20 |      40 |                   
   App.tsx            |   36.84 |        0 |      20 |      40 | 16-32             
- src/components      |   39.58 |    14.28 |   41.37 |   38.29 |                   
+ src/components      |   27.77 |     7.69 |   27.27 |   26.76 |                   
   AddPlanModal.tsx   |      40 |      100 |   33.33 |      40 | 16-21,40          
+  CourseEditor.tsx   |       0 |        0 |       0 |       0 | 12-107            
   CourseList.tsx     |     100 |      100 |     100 |     100 |                   
   PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-50             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
@@ -552,7 +612,7 @@ All files            |    38.8 |    11.11 |   35.89 |    38.7 |
   RecordControls.tsx |     100 |      100 |     100 |     100 |                   
   SemesterEditor.tsx |       0 |        0 |       0 |       0 | 17-72             
   SemesterList.tsx   |     100 |      100 |     100 |     100 |                   
-  SemesterView.tsx   |   66.66 |       50 |      50 |   66.66 | 19                
+  SemesterView.tsx   |      50 |       50 |   33.33 |      50 | 23-28             
  src/interfaces      |       0 |        0 |       0 |       0 |                   
   course.ts          |       0 |        0 |       0 |       0 |                   
   plan.ts            |       0 |        0 |       0 |       0 |                   
@@ -561,5 +621,5 @@ All files            |    38.8 |    11.11 |   35.89 |    38.7 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.52 s
+Time:        2.494 s
 Ran all test suites.
