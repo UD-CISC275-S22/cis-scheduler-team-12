@@ -81,7 +81,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (175 ms)
+  ✕ renders the course name somewhere (204 ms)
 
   ● renders the course name somewhere
 
@@ -91,14 +91,14 @@ FAIL src/App.test.tsx
 
     Ignored nodes: comments, <script />, <style />
     [36m<td[39m
-      [33mwidth[39m=[32m"20%"[39m
+      [33mwidth[39m=[32m"auto"[39m
     [36m>[39m
       [0mCISC275[0m
     [36m</td>[39m
 
     Ignored nodes: comments, <script />, <style />
     [36m<td[39m
-      [33mwidth[39m=[32m"20%"[39m
+      [33mwidth[39m=[32m"auto"[39m
     [36m>[39m
       [0mCISC275[0m
     [36m</td>[39m
@@ -223,39 +223,78 @@ FAIL src/App.test.tsx
                                     [36m<th>[39m
                                       [0mCredits[0m
                                     [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mPrereqs[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCompleted[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mRequired[0m
+                                    [36m</th>[39m
                                   [36m</tr>[39m
                                   [36m<tr>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"20%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mCISC275[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"50%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mIntroduction to Software Engineering[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"30%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0m3[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0mCISC220[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m✔️[0m
                                     [36m</td>[39m
                                   [36m</tr>[39m
                                   [36m<tr>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"20%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mMATH242[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"50%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mAnalytic Geometry and Calculus B[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"30%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0m4[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0mMATH241[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m✔️[0m
                                     [36m</td>[39m
                                   [36m</tr>[39m
                                 [36m</table>[39m
@@ -324,39 +363,76 @@ FAIL src/App.test.tsx
                                     [36m<th>[39m
                                       [0mCredits[0m
                                     [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mPrereqs[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCompleted[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mRequired[0m
+                                    [36m</th>[39m
                                   [36m</tr>[39m
                                   [36m<tr>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"20%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mCISC355[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"50%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mComputers, Ethics, and Society[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"30%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0m3[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m/>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
                                     [36m</td>[39m
                                   [36m</tr>[39m
                                   [36m<tr>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"20%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mENTR456[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"50%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mStartup Experience II[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"30%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0m3[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0mENTR455[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
                                     [36m</td>[39m
                                   [36m</tr>[39m
                                 [36m</table>[39m
@@ -425,39 +501,78 @@ FAIL src/App.test.tsx
                                     [36m<th>[39m
                                       [0mCredits[0m
                                     [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mPrereqs[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCompleted[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mRequired[0m
+                                    [36m</th>[39m
                                   [36m</tr>[39m
                                   [36m<tr>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"20%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mCISC275[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"50%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mIntroduction to Software Engineering[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"30%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0m3[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0mCISC220[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m✔️[0m
                                     [36m</td>[39m
                                   [36m</tr>[39m
                                   [36m<tr>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"20%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mMATH242[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"50%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mAnalytic Geometry and Calculus B[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"30%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0m4[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0mMATH241[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m✔️[0m
                                     [36m</td>[39m
                                   [36m</tr>[39m
                                 [36m</table>[39m
@@ -526,39 +641,76 @@ FAIL src/App.test.tsx
                                     [36m<th>[39m
                                       [0mCredits[0m
                                     [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mPrereqs[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mCompleted[0m
+                                    [36m</th>[39m
+                                    [36m<th>[39m
+                                      [0mRequired[0m
+                                    [36m</th>[39m
                                   [36m</tr>[39m
                                   [36m<tr>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"20%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mCISC355[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"50%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mComputers, Ethics, and Society[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"30%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0m3[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m/>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
                                     [36m</td>[39m
                                   [36m</tr>[39m
                                   [36m<tr>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"20%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mENTR456[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"50%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0mStartup Experience II[0m
                                     [36m</td>[39m
                                     [36m<td[39m
-                                      [33mwidth[39m=[32m"30%"[39m
+                                      [33mwidth[39m=[32m"auto"[39m
                                     [36m>[39m
                                       [0m3[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0mENTR455[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
+                                    [36m</td>[39m
+                                    [36m<td[39m
+                                      [33mwidth[39m=[32m"auto"[39m
+                                    [36m>[39m
+                                      [0m❌[0m
                                     [36m</td>[39m
                                   [36m</tr>[39m
                                 [36m</table>[39m
@@ -615,12 +767,12 @@ FAIL src/App.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |      28 |     6.66 |   23.33 |   27.36 |                   
+All files            |   26.05 |     9.09 |   20.54 |   25.43 |                   
  src                 |   36.84 |        0 |      20 |      40 |                   
   App.tsx            |   36.84 |        0 |      20 |      40 | 16-32             
- src/components      |   25.92 |     7.69 |      24 |      25 |                   
+ src/components      |      24 |       10 |   20.63 |   23.23 |                   
   AddPlanModal.tsx   |      40 |      100 |   33.33 |      40 | 16-21,40          
-  CourseEditor.tsx   |    3.33 |        0 |       0 |    3.33 | 22-152            
+  CourseEditor.tsx   |    2.17 |        0 |       0 |    2.17 | 22-243            
   CourseList.tsx     |     100 |      100 |     100 |     100 |                   
   PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-50             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
@@ -637,5 +789,5 @@ All files            |      28 |     6.66 |   23.33 |   27.36 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.812 s
+Time:        3.25 s
 Ran all test suites.
