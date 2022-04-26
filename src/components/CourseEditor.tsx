@@ -70,6 +70,63 @@ export function CourseEditor({
         );
     }
 
+    function changePrereqs(id: number, newPrereqs: string) {
+        setCourseList(
+            courses.map(
+                (course: Course): Course =>
+                    course.id === id
+                        ? { ...course, prereqs: newPrereqs.split(" ") }
+                        : course
+            )
+        );
+        setCourses(
+            courses.map(
+                (course: Course): Course =>
+                    course.id === id
+                        ? { ...course, prereqs: newPrereqs.split(" ") }
+                        : course
+            )
+        );
+    }
+
+    function changeCompleted(id: number, isCompleted: boolean) {
+        setCourseList(
+            courses.map(
+                (course: Course): Course =>
+                    course.id === id
+                        ? { ...course, completed: isCompleted }
+                        : course
+            )
+        );
+        setCourses(
+            courses.map(
+                (course: Course): Course =>
+                    course.id === id
+                        ? { ...course, completed: isCompleted }
+                        : course
+            )
+        );
+    }
+
+    function changeRequired(id: number, isRequired: boolean) {
+        setCourseList(
+            courses.map(
+                (course: Course): Course =>
+                    course.id === id
+                        ? { ...course, required: isRequired }
+                        : course
+            )
+        );
+        setCourses(
+            courses.map(
+                (course: Course): Course =>
+                    course.id === id
+                        ? { ...course, required: isRequired }
+                        : course
+            )
+        );
+    }
+
     function deleteCourse(id: number) {
         setCourseList(
             courses.filter((course: Course): boolean => course.id !== id)
@@ -94,6 +151,8 @@ export function CourseEditor({
                 <th>Course Code</th>
                 <th>Course Name</th>
                 <th>Credits</th>
+                <th>Prereqs</th>
+                <th>Completed</th>
             </tr>
             {courseList.map((course: Course) => (
                 <tr key={course.id}>
@@ -134,6 +193,38 @@ export function CourseEditor({
                                 );
                                 console.log("Course credits edited");
                             }}
+                        />
+                    </td>
+                    <td>
+                        <Form.Control
+                            type="string"
+                            value={course.prereqs.toString()}
+                            onChange={(
+                                event: React.ChangeEvent<HTMLInputElement>
+                            ) => {
+                                changePrereqs(course.id, event.target.value);
+                                console.log("Course prereqs edited");
+                            }}
+                        />
+                    </td>
+                    <td>
+                        <Form.Check
+                            type="checkbox"
+                            id="completed-check"
+                            checked={course.completed}
+                            onChange={() =>
+                                changeCompleted(course.id, !course.completed)
+                            }
+                        />
+                    </td>
+                    <td>
+                        <Form.Check
+                            type="checkbox"
+                            id="required-check"
+                            checked={course.required}
+                            onChange={() =>
+                                changeRequired(course.id, !course.required)
+                            }
                         />
                     </td>
                     <td>

@@ -25,7 +25,7 @@ export function CourseList({ courses }: { courses: Course[] }): JSX.Element {
                     <td width="auto">{course.code}</td>
                     <td width="auto">{course.title}</td>
                     <td width="auto">{course.credits}</td>
-                    <td width="auto">{course.prereqs.toString}</td>
+                    <td width="auto">{course.prereqs.toString()}</td>
                     <td width="auto">{getEmoji(course.completed)}</td>
                     <td width="auto">{getEmoji(course.required)}</td>
                 </tr>
