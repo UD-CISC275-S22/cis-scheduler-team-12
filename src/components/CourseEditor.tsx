@@ -146,107 +146,114 @@ export function CourseEditor({
     }
 
     return (
-        <table width="500" className="Course-editor">
-            <tr>
-                <th>Course Code</th>
-                <th>Course Name</th>
-                <th>Credits</th>
-                <th>Prereqs</th>
-                <th>Completed</th>
-            </tr>
-            {courseList.map((course: Course) => (
-                <tr key={course.id}>
-                    <td>
-                        <Form.Control
-                            type="string"
-                            value={course.code}
-                            onChange={(
-                                event: React.ChangeEvent<HTMLInputElement>
-                            ) => {
-                                changeCode(course.id, event.target.value);
-                                console.log("Course code edited");
-                            }}
-                        />
-                    </td>
-                    <td>
-                        <Form.Control
-                            type="string"
-                            value={course.title}
-                            onChange={(
-                                event: React.ChangeEvent<HTMLInputElement>
-                            ) => {
-                                changeTitle(course.id, event.target.value);
-                                console.log("Course title edited");
-                            }}
-                        />
-                    </td>
-                    <td>
-                        <Form.Control
-                            type="number"
-                            value={course.credits}
-                            onChange={(
-                                event: React.ChangeEvent<HTMLInputElement>
-                            ) => {
-                                changeCredits(
-                                    course.id,
-                                    parseInt(event.target.value, 10)
-                                );
-                                console.log("Course credits edited");
-                            }}
-                        />
-                    </td>
-                    <td>
-                        <Form.Control
-                            type="string"
-                            value={course.prereqs.toString()}
-                            onChange={(
-                                event: React.ChangeEvent<HTMLInputElement>
-                            ) => {
-                                changePrereqs(course.id, event.target.value);
-                                console.log("Course prereqs edited");
-                            }}
-                        />
-                    </td>
-                    <td>
-                        <Form.Check
-                            type="checkbox"
-                            id="completed-check"
-                            checked={course.completed}
-                            onChange={() =>
-                                changeCompleted(course.id, !course.completed)
-                            }
-                        />
-                    </td>
-                    <td>
-                        <Form.Check
-                            type="checkbox"
-                            id="required-check"
-                            checked={course.required}
-                            onChange={() =>
-                                changeRequired(course.id, !course.required)
-                            }
-                        />
-                    </td>
-                    <td>
-                        <Button
-                            onClick={() => deleteCourse(course.id)}
-                            variant="danger"
-                            className="me-8"
-                        >
-                            Delete
-                        </Button>
-                    </td>
+        <div>
+            <table width="auto" className="Course-editor">
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                    <th>Prereqs</th>
+                    <th>Completed</th>
+                    <th>Required</th>
                 </tr>
-            ))}
-            <tr>
-                <Button
-                    onClick={() => addCourse()}
-                    variant="success"
-                    className="m-4"
-                >
-                    Add Course
-                </Button>
-            </tr>
-        </table>
+                {courseList.map((course: Course) => (
+                    <tr key={course.id}>
+                        <td>
+                            <Form.Control
+                                type="string"
+                                value={course.code}
+                                onChange={(
+                                    event: React.ChangeEvent<HTMLInputElement>
+                                ) => {
+                                    changeCode(course.id, event.target.value);
+                                    console.log("Course code edited");
+                                }}
+                            />
+                        </td>
+                        <td>
+                            <Form.Control
+                                type="string"
+                                value={course.title}
+                                onChange={(
+                                    event: React.ChangeEvent<HTMLInputElement>
+                                ) => {
+                                    changeTitle(course.id, event.target.value);
+                                    console.log("Course title edited");
+                                }}
+                            />
+                        </td>
+                        <td>
+                            <Form.Control
+                                type="number"
+                                value={course.credits}
+                                onChange={(
+                                    event: React.ChangeEvent<HTMLInputElement>
+                                ) => {
+                                    changeCredits(
+                                        course.id,
+                                        parseInt(event.target.value, 10)
+                                    );
+                                    console.log("Course credits edited");
+                                }}
+                            />
+                        </td>
+                        <td>
+                            <Form.Control
+                                type="string"
+                                value={course.prereqs.toString()}
+                                onChange={(
+                                    event: React.ChangeEvent<HTMLInputElement>
+                                ) => {
+                                    changePrereqs(
+                                        course.id,
+                                        event.target.value
+                                    );
+                                    console.log("Course prereqs edited");
+                                }}
+                            />
+                        </td>
+                        <td>
+                            <Form.Check
+                                type="checkbox"
+                                id="completed-check"
+                                checked={course.completed}
+                                onChange={() =>
+                                    changeCompleted(
+                                        course.id,
+                                        !course.completed
+                                    )
+                                }
+                            />
+                        </td>
+                        <td>
+                            <Form.Check
+                                type="checkbox"
+                                id="required-check"
+                                checked={course.required}
+                                onChange={() =>
+                                    changeRequired(course.id, !course.required)
+                                }
+                            />
+                        </td>
+                        <td>
+                            <Button
+                                onClick={() => deleteCourse(course.id)}
+                                variant="danger"
+                                className="me-8"
+                            >
+                                Delete
+                            </Button>
+                        </td>
+                    </tr>
+                ))}
+            </table>
+            <Button
+                onClick={() => addCourse()}
+                variant="success"
+                className="m-4"
+            >
+                Add Course
+            </Button>
+        </div>
     );
 }
