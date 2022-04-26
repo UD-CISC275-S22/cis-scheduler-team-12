@@ -44,17 +44,25 @@
 .Semester-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .Semester {
     display: grid;
-    padding-left: 1rem;
-    margin: 0.5rem;
+    margin-bottom: 1.5rem;
     padding-right: 1rem;
 }
 
 .Semester-header {
     display: inline-flex;
+}
+
+.Semester-header h4 {
+    display: contents;
+}
+
+.Semester-view {
+    padding-bottom: 1rem;
 }
 
 .Plan {

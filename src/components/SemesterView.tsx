@@ -46,13 +46,15 @@ export function SemesterView({
             <div key={semester.id} className="Semester">
                 <Row>
                     <Col>
-                        <h4>
-                            {semester.quarter} {semester.year}
-                        </h4>
-                        <div className="Edit-button">
-                            <RecordControls
-                                changeEditing={changeEditing}
-                            ></RecordControls>
+                        <div className="Semester-header">
+                            <h4>
+                                {semester.quarter} {semester.year}
+                            </h4>
+                            <div className="Edit-button">
+                                <RecordControls
+                                    changeEditing={changeEditing}
+                                ></RecordControls>
+                            </div>
                         </div>
                     </Col>
                 </Row>

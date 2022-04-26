@@ -11,7 +11,7 @@ export function CourseList({ courses }: { courses: Course[] }): JSX.Element {
     }
 
     return (
-        <table width="500" className="Course-table">
+        <table width="auto" className="Course-table">
             <tr>
                 <th>Course Code</th>
                 <th>Course Name</th>
