@@ -22,12 +22,12 @@ export function CourseList({ courses }: { courses: Course[] }): JSX.Element {
             </tr>
             {courses.map((course: Course) => (
                 <tr key={course.id}>
-                    <td>{course.code}</td>
-                    <td>{course.title}</td>
-                    <td>{course.credits}</td>
-                    <td>{course.prereqs.toString}</td>
-                    <td>{getEmoji(course.completed)}</td>
-                    <td>{getEmoji(course.required)}</td>
+                    <td width="auto">{course.code}</td>
+                    <td width="auto">{course.title}</td>
+                    <td width="auto">{course.credits}</td>
+                    <td width="auto">{course.prereqs.toString}</td>
+                    <td width="auto">{getEmoji(course.completed)}</td>
+                    <td width="auto">{getEmoji(course.required)}</td>
                 </tr>
             ))}
         </table>
