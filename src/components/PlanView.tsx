@@ -5,11 +5,17 @@ import { RecordControls } from "./RecordControls";
 import { SemesterList } from "./SemesterList";
 import defaults from "../data/default_plan.json";
 import { Semester } from "../interfaces/semester";
+import { Button } from "react-bootstrap";
 
 const DEFAULT_SEMESTERS = defaults.map((plan) =>
     plan.semesters.map((semester): Semester => ({ ...semester }))
 );
-
+const DEFAULT_SEMESTER: Semester = {
+    quarter: "Fall",
+    id: 0,
+    year: "2022",
+    courses: []
+};
 export function PlanView({
     plan,
     deletePlan,
@@ -44,7 +50,14 @@ export function PlanView({
         );
         console.log("Deleted semester with id %d", id);
     }
-
+    function addSemester() {
+        setSemesters(
+            semesters.concat({ ...DEFAULT_SEMESTER, id: semesters.length + 1 })
+        );
+        setSemesters(
+            semesters.concat({ ...DEFAULT_SEMESTER, id: semesters.length + 1 })
+        );
+    }
     function changeEditing() {
         setEditing(!editing);
     }
@@ -71,8 +84,12 @@ export function PlanView({
                     semesters={semesters}
                     editSemester={editSemester}
                     deleteSemester={deleteSemester}
+                    addSemester={addSemester}
                 ></SemesterList>
             </div>
+            <Button onClick={() => addSemester()} className="me-8">
+                Add Semester
+            </Button>
         </div>
     );
 }
