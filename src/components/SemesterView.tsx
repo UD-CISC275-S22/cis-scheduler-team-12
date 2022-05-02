@@ -10,11 +10,13 @@ import { CourseList } from "./CourseList";
 export function SemesterView({
     semester,
     deleteSemester,
-    editSemester
+    editSemester,
+    addSemester
 }: {
     semester: Semester;
     deleteSemester: (id: number) => void;
     editSemester: (id: number, newSemester: Semester) => void;
+    addSemester: () => void;
 }): JSX.Element {
     const [editing, setEditing] = useState<boolean>(false);
     const [semesterState, setSemesterState] = useState<Semester>(semester);
@@ -35,6 +37,7 @@ export function SemesterView({
                 semester={semester}
                 editSemester={editSemester}
                 deleteSemester={deleteSemester}
+                addSemester={addSemester}
             ></SemesterEditor>
             <CourseEditor
                 courses={semesterState.courses}

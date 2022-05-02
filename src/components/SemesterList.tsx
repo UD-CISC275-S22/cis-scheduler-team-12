@@ -6,11 +6,13 @@ import { SemesterView } from "./SemesterView";
 export function SemesterList({
     semesters,
     editSemester,
-    deleteSemester
+    deleteSemester,
+    addSemester
 }: {
     semesters: Semester[];
     editSemester: (id: number, newSemester: Semester) => void;
     deleteSemester: (id: number) => void;
+    addSemester: () => void;
 }): JSX.Element {
     return (
         <Container className="Semester-list">
@@ -22,6 +24,7 @@ export function SemesterList({
                                 semester={semester}
                                 deleteSemester={deleteSemester}
                                 editSemester={editSemester}
+                                addSemester={addSemester}
                             ></SemesterView>
                         </Col>
                     </Row>
