@@ -7,3 +7,8 @@ test("renders the course name somewhere", () => {
     const linkElement = screen.getByText(/CISC275/i);
     expect(linkElement).toBeInTheDocument();
 });
+
+/*test("renders the default plan"), () => {
+    render(<App />);
+    const linkElement = screen.getByText();
+});*/
