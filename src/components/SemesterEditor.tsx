@@ -30,9 +30,13 @@ export function SemesterEditor({
     }
     return (
         <Container>
-            <Row>
+            <Row className="justify-Center">
                 {/* Semester Quarter */}
-                <Form.Group controlID="formQuarter" as={Row}>
+                <Form.Group
+                    controlID="formQuarter"
+                    as={Row}
+                    className="quarter-Year-Form"
+                >
                     <Col>
                         <Form.Label>Quarter:</Form.Label>
                         <Form.Select
@@ -66,15 +70,19 @@ export function SemesterEditor({
                 </Form.Group>
             </Row>
             {/* Save/Cancel */}
-            <Button onClick={save} variant="success" className="me-4">
-                Save
+            <Button
+                onClick={save}
+                variant="success"
+                className="me-4 save-Semester"
+            >
+                Save Semester
             </Button>
             <Button
                 onClick={() => deleteSemester(semester.id)}
                 variant="danger"
-                className="me-8"
+                className="me-8 delete-Semester"
             >
-                Delete
+                Delete Semester
             </Button>
         </Container>
     );
