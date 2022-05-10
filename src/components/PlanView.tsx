@@ -50,13 +50,14 @@ export function PlanView({
         );
         //console.log("Deleted semester with id %d", id);
     }
-
     function addSemester() {
         setSemesters(
             semesters.concat({ ...DEFAULT_SEMESTER, id: semesters.length + 1 })
         );
+        setSemesters(
+            semesters.concat({ ...DEFAULT_SEMESTER, id: semesters.length + 1 })
+        );
     }
-
     function changeEditing() {
         setEditing(!editing);
     }

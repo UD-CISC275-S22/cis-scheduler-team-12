@@ -17,7 +17,6 @@ export function SemesterEditor({
     const [quarter, setQuarter] = useState<string>(semester.quarter);
     const [year, setYear] = useState<string>(semester.year);
     const courses = semester.courses;
-
     function save() {
         editSemester(semester.id, {
             id: semester.id,
