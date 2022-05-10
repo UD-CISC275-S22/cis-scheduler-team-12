@@ -12,6 +12,7 @@ export function SemesterEditor({
     semester: Semester;
     editSemester: (id: number, newSemester: Semester) => void;
     deleteSemester: (id: number) => void;
+    addSemester: () => void;
 }): JSX.Element {
     const [quarter, setQuarter] = useState<string>(semester.quarter);
     const [year, setYear] = useState<string>(semester.year);
