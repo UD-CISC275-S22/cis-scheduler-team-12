@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render /*, screen */ } from "@testing-library/react";
 import { SemesterList } from "./SemesterList";
 import defaults from "../data/default_plan.json";
 import { Semester } from "../interfaces/semester";
