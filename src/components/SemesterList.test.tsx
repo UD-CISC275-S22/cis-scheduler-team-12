@@ -29,6 +29,9 @@ describe("PlanList Component tests", () => {
                 deleteSemester={function (id: number): void {
                     console.log("deleted semester with id: " + id);
                 }}
+                addSemester={function (): void {
+                    console.log("added new semester");
+                }}
             />
         );
     });
