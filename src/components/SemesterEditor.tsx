@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import { Semester } from "../interfaces/semester";
-import { Course } from "../interfaces/course";
 
 export function SemesterEditor({
     changeEditing,
@@ -17,8 +16,7 @@ export function SemesterEditor({
 }): JSX.Element {
     const [quarter, setQuarter] = useState<string>(semester.quarter);
     const [year, setYear] = useState<string>(semester.year);
-    const [courses] = useState<Course[]>(semester.courses);
-    // const [semesterList, setSemesterList] = useState<Semester[]>(semester);
+    const courses = semester.courses;
     function save() {
         editSemester(semester.id, {
             id: semester.id,
@@ -45,7 +43,7 @@ export function SemesterEditor({
                                 event: React.ChangeEvent<HTMLSelectElement>
                             ) => {
                                 setQuarter(event.target.value);
-                                console.log("Quarter edited");
+                                //console.log("Quarter edited");
                             }}
                         >
                             <option value="Fall">Fall</option>
@@ -63,7 +61,7 @@ export function SemesterEditor({
                                 event: React.ChangeEvent<HTMLInputElement>
                             ) => {
                                 setYear(event.target.value);
-                                console.log("Year edited");
+                                //console.log("Year edited");
                             }}
                         />
                     </Col>

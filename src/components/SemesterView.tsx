@@ -19,15 +19,12 @@ export function SemesterView({
     addSemester: () => void;
 }): JSX.Element {
     const [editing, setEditing] = useState<boolean>(false);
-    const [semesterState, setSemesterState] = useState<Semester>(semester);
-
     function changeEditing() {
         setEditing(!editing);
     }
 
     function changeCourses(newCourses: Course[]) {
         editSemester(semester.id, { ...semester, courses: newCourses });
-        setSemesterState({ ...semester, courses: newCourses });
     }
 
     return editing ? (
@@ -40,7 +37,7 @@ export function SemesterView({
                 addSemester={addSemester}
             ></SemesterEditor>
             <CourseEditor
-                courses={semesterState.courses}
+                courses={semester.courses}
                 setCourses={changeCourses}
             ></CourseEditor>
         </Container>
@@ -63,7 +60,7 @@ export function SemesterView({
                 </Row>
             </div>
             <div>
-                <CourseList courses={semesterState.courses}></CourseList>
+                <CourseList courses={semester.courses}></CourseList>
             </div>
         </Container>
     );

@@ -25,8 +25,8 @@ export function PlanView({
     deletePlan: (id: number) => void;
     editPlan: (id: number, newPlan: Plan) => void;
 }): JSX.Element {
-    console.log(DEFAULT_SEMESTERS);
-    console.log(DEFAULT_SEMESTERS[0]);
+    //console.log(DEFAULT_SEMESTERS);
+    //console.log(DEFAULT_SEMESTERS[0]);
     const [editing, setEditing] = useState<boolean>(false);
     const [semesters, setSemesters] = useState<Semester[]>(
         DEFAULT_SEMESTERS[0]
@@ -39,7 +39,7 @@ export function PlanView({
                     semester.id === id ? newSemester : semester
             )
         );
-        console.log("Edited semester with id %d", id);
+        //console.log("Edited semester with id %d", id);
     }
 
     function deleteSemester(id: number) {
@@ -48,7 +48,7 @@ export function PlanView({
                 (semester: Semester): boolean => semester.id !== id
             )
         );
-        console.log("Deleted semester with id %d", id);
+        //console.log("Deleted semester with id %d", id);
     }
     function addSemester() {
         setSemesters(
