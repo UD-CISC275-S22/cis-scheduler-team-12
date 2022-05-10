@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Form } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 
@@ -19,15 +19,7 @@ export function CourseEditor({
     courses: Course[];
     setCourses: (courses: Course[]) => void;
 }): JSX.Element {
-    const [courseList, setCourseList] = useState<Course[]>(courses);
-
     function changeCode(id: number, newCode: string) {
-        setCourseList(
-            courses.map(
-                (course: Course): Course =>
-                    course.id === id ? { ...course, code: newCode } : course
-            )
-        );
         setCourses(
             courses.map(
                 (course: Course): Course =>
@@ -37,12 +29,6 @@ export function CourseEditor({
     }
 
     function changeTitle(id: number, newTitle: string) {
-        setCourseList(
-            courses.map(
-                (course: Course): Course =>
-                    course.id === id ? { ...course, title: newTitle } : course
-            )
-        );
         setCourses(
             courses.map(
                 (course: Course): Course =>
@@ -52,14 +38,6 @@ export function CourseEditor({
     }
 
     function changeCredits(id: number, newCredits: number) {
-        setCourseList(
-            courses.map(
-                (course: Course): Course =>
-                    course.id === id
-                        ? { ...course, credits: newCredits }
-                        : course
-            )
-        );
         setCourses(
             courses.map(
                 (course: Course): Course =>
@@ -71,14 +49,6 @@ export function CourseEditor({
     }
 
     function changePrereqs(id: number, newPrereqs: string) {
-        setCourseList(
-            courses.map(
-                (course: Course): Course =>
-                    course.id === id
-                        ? { ...course, prereqs: newPrereqs.split(" ") }
-                        : course
-            )
-        );
         setCourses(
             courses.map(
                 (course: Course): Course =>
@@ -90,14 +60,6 @@ export function CourseEditor({
     }
 
     function changeCompleted(id: number, isCompleted: boolean) {
-        setCourseList(
-            courses.map(
-                (course: Course): Course =>
-                    course.id === id
-                        ? { ...course, completed: isCompleted }
-                        : course
-            )
-        );
         setCourses(
             courses.map(
                 (course: Course): Course =>
@@ -109,14 +71,6 @@ export function CourseEditor({
     }
 
     function changeRequired(id: number, isRequired: boolean) {
-        setCourseList(
-            courses.map(
-                (course: Course): Course =>
-                    course.id === id
-                        ? { ...course, required: isRequired }
-                        : course
-            )
-        );
         setCourses(
             courses.map(
                 (course: Course): Course =>
@@ -128,18 +82,12 @@ export function CourseEditor({
     }
 
     function deleteCourse(id: number) {
-        setCourseList(
-            courses.filter((course: Course): boolean => course.id !== id)
-        );
         setCourses(
             courses.filter((course: Course): boolean => course.id !== id)
         );
     }
 
     function addCourse() {
-        setCourseList(
-            courses.concat({ ...DEFAULT_COURSE, id: courses.length + 1 })
-        );
         setCourses(
             courses.concat({ ...DEFAULT_COURSE, id: courses.length + 1 })
         );
@@ -156,7 +104,7 @@ export function CourseEditor({
                     <th>Completed</th>
                     <th>Required</th>
                 </tr>
-                {courseList.map((course: Course) => (
+                {courses.map((course: Course) => (
                     <tr key={course.id}>
                         <td>
                             <Form.Control

@@ -17,7 +17,6 @@ export function SemesterView({
     editSemester: (id: number, newSemester: Semester) => void;
 }): JSX.Element {
     const [editing, setEditing] = useState<boolean>(false);
-
     function changeEditing() {
         setEditing(!editing);
     }
