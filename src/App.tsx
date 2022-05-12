@@ -61,7 +61,7 @@ function App(): JSX.Element {
             </div>
             <br></br>
             <Button variant="info" className="save-button" onClick={saveData}>
-                Save Plans
+                Save Changes
             </Button>
             <div>
                 <PlanList
