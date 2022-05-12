@@ -39,7 +39,7 @@ export function PlanView({
                     semester.id === id ? newSemester : semester
             )
         );
-        //console.log("Edited semester with id %d", id);
+        console.log("Edited semester with id %d", id);
     }
 
     function deleteSemester(id: number) {
@@ -48,14 +48,18 @@ export function PlanView({
                 (semester: Semester): boolean => semester.id !== id
             )
         );
-        //console.log("Deleted semester with id %d", id);
+        console.log("Deleted semester with id %d", id);
     }
     function addSemester() {
         setSemesters(
-            semesters.concat({ ...DEFAULT_SEMESTER, id: semesters.length + 1 })
+            semesters.concat({
+                ...DEFAULT_SEMESTER,
+                id: semesters[semesters.length - 1].id + 1
+            })
         );
-        setSemesters(
-            semesters.concat({ ...DEFAULT_SEMESTER, id: semesters.length + 1 })
+        console.log(
+            "Added semester with id %d",
+            semesters[semesters.length - 1].id + 1
         );
     }
     function changeEditing() {
