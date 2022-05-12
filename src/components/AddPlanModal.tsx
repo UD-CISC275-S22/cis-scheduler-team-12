@@ -34,6 +34,7 @@ export function AddPlanModal({
                         </Form.Label>
                         <Col>
                             <Form.Control
+                                type={"textbox"}
                                 value={name}
                                 onChange={(
                                     event: React.ChangeEvent<HTMLInputElement>
@@ -46,7 +47,11 @@ export function AddPlanModal({
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={saveChanges}>
+                    <Button
+                        data-testid="save-plan "
+                        variant="primary"
+                        onClick={saveChanges}
+                    >
                         Save Changes
                     </Button>
                 </Modal.Footer>

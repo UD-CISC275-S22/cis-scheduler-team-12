@@ -185,6 +185,7 @@ export function CourseEditor({
                         </td>
                         <td>
                             <Button
+                                data-testid="delete-course"
                                 onClick={() => deleteCourse(course.id)}
                                 variant="danger"
                                 className="me-8"
@@ -196,6 +197,7 @@ export function CourseEditor({
                 ))}
             </table>
             <Button
+                data-testid="add-course"
                 onClick={() => addCourse()}
                 variant="success"
                 className="m-4"

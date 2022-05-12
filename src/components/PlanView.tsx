@@ -87,7 +87,7 @@ export function PlanView({
                     addSemester={addSemester}
                 ></SemesterList>
             </div>
-            <Button onClick={() => addSemester()} className="me-8">
+            <Button data-testid="add-sem" onClick={() => addSemester()}>
                 Add Semester
             </Button>
         </div>

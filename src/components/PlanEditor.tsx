@@ -43,10 +43,16 @@ export function PlanEditor({
                 </Form.Group>
             </Row>
             {/* Save/Cancel */}
-            <Button onClick={save} variant="success" className="me-4">
+            <Button
+                data-testid="save-plan"
+                onClick={save}
+                variant="success"
+                className="me-4"
+            >
                 Save
             </Button>
             <Button
+                data-testid="delete-plan"
                 onClick={() => deletePlan(plan.id)}
                 variant="danger"
                 className="me-8"

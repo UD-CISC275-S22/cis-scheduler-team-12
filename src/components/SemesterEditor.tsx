@@ -55,7 +55,7 @@ export function SemesterEditor({
                     <Col>
                         <Form.Label>Year:</Form.Label>
                         <Form.Control
-                            type="number"
+                            type="textbox"
                             value={year}
                             onChange={(
                                 event: React.ChangeEvent<HTMLInputElement>
@@ -69,6 +69,7 @@ export function SemesterEditor({
             </Row>
             {/* Save/Cancel */}
             <Button
+                data-testid="save-semester"
                 onClick={save}
                 variant="success"
                 className="me-4 save-Semester"
@@ -76,6 +77,7 @@ export function SemesterEditor({
                 Save Semester
             </Button>
             <Button
+                data-testid="delete-semester"
                 onClick={() => deleteSemester(semester.id)}
                 variant="danger"
                 className="me-8 delete-Semester"

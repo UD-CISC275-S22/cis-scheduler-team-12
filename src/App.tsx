@@ -8,7 +8,7 @@ import { Button } from "react-bootstrap";
 
 export const DEFAULTS = defaults.map((plan): Plan => ({ ...plan }));
 
-function App(): JSX.Element {
+export function App(): JSX.Element {
     const [showAddModal, setShowAddModal] = useState(false);
     const [plans, setPlans] = useState<Plan[]>(DEFAULTS);
 
@@ -57,6 +57,7 @@ function App(): JSX.Element {
                 ></PlanList>
                 <div>
                     <Button
+                        data-testid="addmodal"
                         variant="success"
                         className="m-4"
                         onClick={handleShowAddModal}
