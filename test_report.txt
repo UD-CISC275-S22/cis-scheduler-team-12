@@ -58,7 +58,7 @@ All files            |    19.8 |     12.5 |   17.64 |   19.79 |
   App.tsx            |       0 |        0 |       0 |       0 | 9-37              
  src/components      |   24.39 |    14.28 |   20.68 |   23.45 |                   
   AddPlanModal.tsx   |       0 |      100 |       0 |       0 | 14-40             
-  CourseEditor.tsx   |    3.33 |        0 |       0 |    3.33 | 23-199            
+  CourseEditor.tsx   |    3.33 |        0 |       0 |    3.33 | 23-202            
   CourseList.tsx     |     100 |      100 |     100 |     100 |                   
   PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-50             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
@@ -75,5 +75,5 @@ All files            |    19.8 |     12.5 |   17.64 |   19.79 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        3.502 s
+Time:        2.936 s
 Ran all test suites.
