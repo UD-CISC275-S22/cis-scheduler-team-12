@@ -6,11 +6,18 @@ import { PlanList } from "./components/PlanList";
 import { AddPlanModal } from "./components/AddPlanModal";
 import { Button } from "react-bootstrap";
 
+let loadedData = defaults.map((plan): Plan => ({ ...plan }));
+const saveDataKey = "CISC275-TEAM-12";
+const previousData = localStorage.getItem(saveDataKey);
+if (previousData !== null) {
+    loadedData = JSON.parse(previousData);
+}
+
 export const DEFAULTS = defaults.map((plan): Plan => ({ ...plan }));
 
 function App(): JSX.Element {
     const [showAddModal, setShowAddModal] = useState(false);
-    const [plans, setPlans] = useState<Plan[]>(DEFAULTS);
+    const [plans, setPlans] = useState<Plan[]>(loadedData);
 
     function editPlan(id: number, newPlan: Plan) {
         setPlans(
@@ -32,6 +39,10 @@ function App(): JSX.Element {
             console.log("Created new plan with id %d", plans.length + 1);
         }
     }
+
+    function saveData() {
+        localStorage.setItem(saveDataKey, JSON.stringify(plans));
+    }
     const handleCloseAddModal = () => setShowAddModal(false);
     const handleShowAddModal = () => setShowAddModal(true);
     return (
@@ -49,6 +60,9 @@ function App(): JSX.Element {
                 </p>
             </div>
             <br></br>
+            <Button variant="info" className="save-button" onClick={saveData}>
+                Save Plans
+            </Button>
             <div>
                 <PlanList
                     plans={plans}
