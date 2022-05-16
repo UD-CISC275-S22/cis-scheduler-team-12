@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
-import { Semester } from "../interfaces/semester";
+//import { Semester } from "../interfaces/semester";
 
 export function PlanEditor({
     changeEditing,
@@ -15,7 +15,8 @@ export function PlanEditor({
     deletePlan: (id: number) => void;
 }): JSX.Element {
     const [name, setName] = useState<string>(plan.name);
-    const [semesters] = useState<Semester[]>(plan.semesters);
+    //const [semesters] = useState<Semester[]>(plan.semesters);
+    const semesters = plan.semesters;
     function save() {
         editPlan(plan.id, {
             ...plan,

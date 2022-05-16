@@ -3,7 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 
 const DEFAULT_COURSE: Course = {
-    id: 0,
+    id: 1,
     code: "CISC101",
     title: "new course",
     credits: 3,
@@ -88,12 +88,14 @@ export function CourseEditor({
     }
 
     function addCourse() {
-        setCourses(
-            courses.concat({
-                ...DEFAULT_COURSE,
-                id: courses[courses.length - 1].id + 1
-            })
-        );
+        if (courses.length !== 0) {
+            setCourses(
+                courses.concat({
+                    ...DEFAULT_COURSE,
+                    id: courses[courses.length - 1].id + 1
+                })
+            );
+        } else setCourses([{ ...DEFAULT_COURSE }]);
     }
 
     return (
