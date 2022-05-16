@@ -29,7 +29,7 @@ export function PlanEditor({
         <Container>
             <Row>
                 {/*name */}
-                <Form.Group controlID="formName" as={Row}>
+                <Form.Group controlid="formName" as={Row}>
                     <Form.Label column sm={2}>
                         Name
                     </Form.Label>

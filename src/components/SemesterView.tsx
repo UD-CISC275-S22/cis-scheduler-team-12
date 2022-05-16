@@ -52,6 +52,7 @@ export function SemesterView({
                             <div className="Edit-button">
                                 <div>
                                     <Button
+                                        data-testid="edit"
                                         className="float-right"
                                         size="sm"
                                         onClick={changeEditing}
