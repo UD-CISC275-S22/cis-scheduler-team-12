@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Plan } from "../interfaces/plan";
 import { PlanEditor } from "./PlanEditor";
-import { RecordControls } from "./RecordControls";
 import { SemesterList } from "./SemesterList";
 import defaults from "../data/default_plan.json";
 import { Semester } from "../interfaces/semester";
@@ -26,6 +25,7 @@ export function PlanView({
     editPlan: (id: number, newPlan: Plan) => void;
 }): JSX.Element {
     const [editing, setEditing] = useState<boolean>(false);
+    const [minimized, setMinimized] = useState<boolean>(false);
     const [semesters, setSemesters] = useState<Semester[]>(
         DEFAULT_SEMESTERS[0]
     );
@@ -63,8 +63,28 @@ export function PlanView({
     function changeEditing() {
         setEditing(!editing);
     }
+    function changeMinimized() {
+        setMinimized(!minimized);
+    }
 
-    return editing ? (
+    return minimized ? (
+        <div className="Plan">
+            <div className="Plan-header">
+                <h3>{plan.name}</h3>
+                <div className="Minimize-button">
+                    <div>
+                        <Button
+                            className="float-right"
+                            size="sm"
+                            onClick={changeMinimized}
+                        >
+                            ➕
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ) : editing ? (
         <PlanEditor
             changeEditing={changeEditing}
             plan={plan}
@@ -76,9 +96,26 @@ export function PlanView({
             <div className="Plan-header">
                 <h3>{plan.name}</h3>
                 <div className="Edit-button">
-                    <RecordControls
-                        changeEditing={changeEditing}
-                    ></RecordControls>
+                    <div>
+                        <Button
+                            className="float-right"
+                            size="sm"
+                            onClick={changeEditing}
+                        >
+                            Edit
+                        </Button>
+                    </div>
+                </div>
+                <div className="Minimize-button">
+                    <div>
+                        <Button
+                            className="float-right"
+                            size="sm"
+                            onClick={changeMinimized}
+                        >
+                            ➖
+                        </Button>
+                    </div>
                 </div>
             </div>
             <div className="Semester-list">

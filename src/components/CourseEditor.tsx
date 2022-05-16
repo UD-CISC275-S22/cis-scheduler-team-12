@@ -89,7 +89,10 @@ export function CourseEditor({
 
     function addCourse() {
         setCourses(
-            courses.concat({ ...DEFAULT_COURSE, id: courses.length + 1 })
+            courses.concat({
+                ...DEFAULT_COURSE,
+                id: courses[courses.length - 1].id + 1
+            })
         );
     }
 
