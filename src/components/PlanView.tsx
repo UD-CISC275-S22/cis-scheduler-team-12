@@ -49,16 +49,14 @@ export function PlanView({
         console.log("Deleted semester with id %d", id);
     }
     function addSemester() {
-        setSemesters(
-            semesters.concat({
-                ...DEFAULT_SEMESTER,
-                id: semesters[semesters.length - 1].id + 1
-            })
-        );
-        console.log(
-            "Added semester with id %d",
-            semesters[semesters.length - 1].id + 1
-        );
+        if (semesters.length !== 0) {
+            setSemesters(
+                semesters.concat({
+                    ...DEFAULT_SEMESTER,
+                    id: semesters[semesters.length - 1].id + 1
+                })
+            );
+        } else setSemesters([{ ...DEFAULT_SEMESTER }]);
     }
     function changeEditing() {
         setEditing(!editing);
@@ -98,7 +96,6 @@ export function PlanView({
                 <div className="Edit-button">
                     <div>
                         <Button
-                            data-testid="edit"
                             className="float-right"
                             size="sm"
                             onClick={changeEditing}
