@@ -2,43 +2,2087 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
+FAIL src/components/Course.test.tsx
+  ● Edit, Add, and Remove Courses Tests › tesing edit a course
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="edit"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mCISC Course Planner (Group 12)[0m
+          [36m</header>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Welcome-message"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mWelcome to our CISC Course Planner! On this website, you can create plans for your degree. [0m
+              [36m<br />[39m
+              [0mEach plan consists of a list of semesters, and each semester consists of a list of courses. [0m
+              [36m<br />[39m
+              [0m Each course can be modified to suit your specific requirements.[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<br />[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"vstack gap-3"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"Plan"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Plan-header"[39m
+                    [36m>[39m
+                      [36m<h3>[39m
+                        [0mDefault Plan[0m
+                      [36m</h3>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Edit-button"[39m
+                      [36m>[39m
+                        [36m<div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit[0m
+                          [36m</button>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Minimize-button"[39m
+                      [36m>[39m
+                        [36m<div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0m➖[0m
+                          [36m</button>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Semester-list"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Semester-list container"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mFall[0m
+                                          [0m [0m
+                                          [0m2022[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC275[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mIntroduction to Software Engineering[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC220[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH242[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mAnalytic Geometry and Calculus B[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m4[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH241[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mSpring[0m
+                                          [0m [0m
+                                          [0m2023[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC355[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mComputers, Ethics, and Society[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m/>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR456[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mStartup Experience II[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR455[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mWinter[0m
+                                          [0m [0m
+                                          [0m2023[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC275[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mIntroduction to Software Engineering[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC220[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH242[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mAnalytic Geometry and Calculus B[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m4[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH241[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mSummer[0m
+                                          [0m [0m
+                                          [0m2023[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC355[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mComputers, Ethics, and Society[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m/>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR456[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mStartup Experience II[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR455[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mdata-testid[39m=[32m"add-sem"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mAdd Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"m-4 btn btn-success"[39m
+                [33mdata-testid[39m=[32m"addmodal"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSave Data[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mid[39m=[32m"Footer"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mMade by Jackson Leadlove, Alex Trexler, and Andrew Woods[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      11 |     afterEach(cleanup);
+      12 |     test("tesing edit a course", () => {
+    > 13 |         const edit = screen.getAllByTestId("edit");
+         |                             ^
+      14 |         //selecting fall2022
+      15 |         edit[1].click();
+      16 |         //changing course code to CISC275 of first course
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/components/Course.test.tsx:13:29)
+
+  ● Edit, Add, and Remove Courses Tests › tesing add a course
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="edit"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mCISC Course Planner (Group 12)[0m
+          [36m</header>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Welcome-message"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mWelcome to our CISC Course Planner! On this website, you can create plans for your degree. [0m
+              [36m<br />[39m
+              [0mEach plan consists of a list of semesters, and each semester consists of a list of courses. [0m
+              [36m<br />[39m
+              [0m Each course can be modified to suit your specific requirements.[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<br />[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"vstack gap-3"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"Plan"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Plan-header"[39m
+                    [36m>[39m
+                      [36m<h3>[39m
+                        [0mDefault Plan[0m
+                      [36m</h3>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Edit-button"[39m
+                      [36m>[39m
+                        [36m<div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit[0m
+                          [36m</button>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Minimize-button"[39m
+                      [36m>[39m
+                        [36m<div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0m➖[0m
+                          [36m</button>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Semester-list"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Semester-list container"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mFall[0m
+                                          [0m [0m
+                                          [0m2022[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC275[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mIntroduction to Software Engineering[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC220[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH242[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mAnalytic Geometry and Calculus B[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m4[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH241[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mSpring[0m
+                                          [0m [0m
+                                          [0m2023[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC355[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mComputers, Ethics, and Society[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m/>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR456[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mStartup Experience II[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR455[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mWinter[0m
+                                          [0m [0m
+                                          [0m2023[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC275[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mIntroduction to Software Engineering[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC220[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH242[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mAnalytic Geometry and Calculus B[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m4[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH241[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mSummer[0m
+                                          [0m [0m
+                                          [0m2023[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC355[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mComputers, Ethics, and Society[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m/>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR456[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mStartup Experience II[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR455[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mdata-testid[39m=[32m"add-sem"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mAdd Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"m-4 btn btn-success"[39m
+                [33mdata-testid[39m=[32m"addmodal"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSave Data[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mid[39m=[32m"Footer"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mMade by Jackson Leadlove, Alex Trexler, and Andrew Woods[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      24 |     });
+      25 |     test("tesing add a course", () => {
+    > 26 |         const edit = screen.getAllByTestId("edit");
+         |                             ^
+      27 |         //changing fall2022
+      28 |         edit[1].click();
+      29 |         const addCourse = screen.getByTestId("add-course");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/components/Course.test.tsx:26:29)
+
+  ● Edit, Add, and Remove Courses Tests › tesing remove a course
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="edit"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mCISC Course Planner (Group 12)[0m
+          [36m</header>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Welcome-message"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mWelcome to our CISC Course Planner! On this website, you can create plans for your degree. [0m
+              [36m<br />[39m
+              [0mEach plan consists of a list of semesters, and each semester consists of a list of courses. [0m
+              [36m<br />[39m
+              [0m Each course can be modified to suit your specific requirements.[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<br />[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"vstack gap-3"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"bg-light border m-2 p-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"Plan"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Plan-header"[39m
+                    [36m>[39m
+                      [36m<h3>[39m
+                        [0mDefault Plan[0m
+                      [36m</h3>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Edit-button"[39m
+                      [36m>[39m
+                        [36m<div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit[0m
+                          [36m</button>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Minimize-button"[39m
+                      [36m>[39m
+                        [36m<div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0m➖[0m
+                          [36m</button>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"Semester-list"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"Semester-list container"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mFall[0m
+                                          [0m [0m
+                                          [0m2022[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC275[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mIntroduction to Software Engineering[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC220[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH242[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mAnalytic Geometry and Calculus B[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m4[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH241[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mSpring[0m
+                                          [0m [0m
+                                          [0m2023[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC355[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mComputers, Ethics, and Society[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m/>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR456[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mStartup Experience II[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR455[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mWinter[0m
+                                          [0m [0m
+                                          [0m2023[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC275[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mIntroduction to Software Engineering[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC220[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH242[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mAnalytic Geometry and Calculus B[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m4[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mMATH241[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m✔️[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"Semester"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"col"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"Semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mclass[39m=[32m"Semester"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"row"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"Semester-header"[39m
+                                      [36m>[39m
+                                        [36m<h4>[39m
+                                          [0mSummer[0m
+                                          [0m [0m
+                                          [0m2023[0m
+                                        [36m</h4>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"Edit-button"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<table[39m
+                                    [33mclass[39m=[32m"Course-table"[39m
+                                    [33mwidth[39m=[32m"auto"[39m
+                                  [36m>[39m
+                                    [36m<tbody>[39m
+                                      [36m<tr>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Code[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCourse Name[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCredits[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mPrereqs[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mCompleted[0m
+                                        [36m</th>[39m
+                                        [36m<th>[39m
+                                          [0mRequired[0m
+                                        [36m</th>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mCISC355[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mComputers, Ethics, and Society[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m/>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                      [36m<tr>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR456[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mStartup Experience II[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m3[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0mENTR455[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                        [36m<td[39m
+                                          [33mwidth[39m=[32m"auto"[39m
+                                        [36m>[39m
+                                          [0m❌[0m
+                                        [36m</td>[39m
+                                      [36m</tr>[39m
+                                    [36m</tbody>[39m
+                                  [36m</table>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mdata-testid[39m=[32m"add-sem"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mAdd Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"m-4 btn btn-success"[39m
+                [33mdata-testid[39m=[32m"addmodal"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd New Plan[0m
+              [36m</button>[39m
+              [36m<div />[39m
+            [36m</div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSave Data[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mid[39m=[32m"Footer"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mMade by Jackson Leadlove, Alex Trexler, and Andrew Woods[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      37 |     });
+      38 |     test("tesing remove a course", () => {
+    > 39 |         const edit = screen.getAllByTestId("edit");
+         |                             ^
+      40 |         //changing fall2022
+      41 |         edit[1].click();
+      42 |         const delCourse = screen.getAllByTestId("delete-course");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/components/Course.test.tsx:39:29)
+
 PASS src/components/PlanList.test.tsx
-  ● Console
-
-    console.error
-      Warning: validateDOMNesting(...): <tr> cannot appear as a child of <table>. Add a <tbody>, <thead> or <tfoot> to your code to match the DOM tree generated by the browser.
-          at tr
-          at table
-          at CourseList (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/CourseList.tsx:4:30)
-          at div
-          at div
-          at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Container.js:24:3
-          at SemesterView (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/SemesterView.tsx:10:5)
-          at div
-          at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Col.js:72:8
-          at div
-          at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Row.js:22:3
-          at div
-          at div
-          at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Container.js:24:3
-          at SemesterList (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/SemesterList.tsx:7:5)
-          at div
-          at div
-          at PlanView (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/PlanView.tsx:19:5)
-          at div
-          at div
-          at /home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/node_modules/react-bootstrap/cjs/Stack.js:23:7
-          at PlanList (/home/runner/work/cis-scheduler-team-12/cis-scheduler-team-12/src/components/PlanList.tsx:7:5)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10081:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
-
 FAIL src/components/SemesterList.test.tsx
   ● Test suite failed to run
 
@@ -53,17 +2097,18 @@ FAIL src/components/SemesterList.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |    19.6 |     14.7 |   16.17 |   19.58 |                   
- src                 |       0 |        0 |       0 |       0 |                   
-  App.tsx            |       0 |        0 |       0 |       0 | 9-37              
- src/components      |   24.09 |    16.66 |   18.96 |   23.17 |                   
-  AddPlanModal.tsx   |       0 |      100 |       0 |       0 | 14-40             
-  CourseEditor.tsx   |    3.33 |        0 |       0 |    3.33 | 23-202            
+All files            |      30 |    16.66 |      20 |   29.52 |                   
+ src                 |    42.3 |    16.66 |   18.18 |   45.45 |                   
+  App.tsx            |    42.3 |    16.66 |   18.18 |   45.45 | 15,23-43          
+ src/components      |   26.19 |    16.66 |   20.33 |    25.3 |                   
+  AddPlanModal.tsx   |      40 |      100 |   33.33 |      40 | 16-21,41          
+  CourseEditor.tsx   |    3.33 |        0 |       0 |    3.33 | 23-215            
   CourseList.tsx     |     100 |      100 |     100 |     100 |                   
-  PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-50             
+  PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-56             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
-  PlanView.tsx       |    42.1 |    33.33 |   27.27 |   38.88 | 36-69,131         
-  SemesterEditor.tsx |       0 |        0 |       0 |       0 | 17-79             
+  PlanView.tsx       |    42.1 |    33.33 |   27.27 |   38.88 | 34-67,129         
+  RecordControls.tsx |       0 |      100 |       0 |       0 | 9                 
+  SemesterEditor.tsx |       0 |        0 |       0 |       0 | 17-81             
   SemesterList.tsx   |     100 |      100 |     100 |     100 |                   
   SemesterView.tsx   |      50 |       50 |   33.33 |      50 | 22-26             
  src/interfaces      |       0 |        0 |       0 |       0 |                   
@@ -71,8 +2116,8 @@ All files            |    19.6 |     14.7 |   16.17 |   19.58 |
   plan.ts            |       0 |        0 |       0 |       0 |                   
   semester.ts        |       0 |        0 |       0 |       0 |                   
 ---------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 failed, 1 passed, 2 total
-Tests:       1 passed, 1 total
+Test Suites: 2 failed, 1 passed, 3 total
+Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        3.064 s
+Time:        5.076 s
 Ran all test suites.
