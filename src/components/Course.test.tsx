@@ -13,17 +13,18 @@ describe("Edit, Add, and Remove Courses Tests", () => {
         const edit = screen.getAllByTestId("edit");
         //selecting fall2022
         edit[1].click();
-        //changing course code to CISC275 of first course
+        //changing course code to CISC367 of first course
         const textbox = screen.queryAllByRole("textbox");
         userEvent.type(textbox[1], "CISC367");
         //saving semester
         const saveSem = screen.getByTestId("save-semester");
         saveSem.click();
-        //checking to see if default name is in...successful adding of course
+        //checking to see if course code is now CISC275CISC367...success
         expect(screen.queryByText(/CISC367/i)).toBeInTheDocument();
     });
     test("tesing add a course", () => {
         const edit = screen.getAllByTestId("edit");
+        // console.log(edit);
         //changing fall2022
         edit[1].click();
         const addCourse = screen.getByTestId("add-course");
@@ -35,6 +36,20 @@ describe("Edit, Add, and Remove Courses Tests", () => {
         //checking to see if default name is in...successful adding of course
         expect(screen.queryByText(/new course/i)).toBeInTheDocument();
     });
+    // test("tesing to see if courses are listed", () => {
+    //     //checking to see if default fields are even listed
+    //     const titles = screen.getAllByText(/Course Code/i);
+    //     console.log(titles[1]);
+    //     expect(titles[1].children).toEqual("Course Code");
+    //     // expect(titles[1]);
+    //     // console.log(screen.queryAllByText(/Course Code/i));
+    //     // expect(screen.findAllByText(/Course Code/i)).toBeInTheDocument();
+    //     expect(screen.queryAllByText(/Course Name/i)).toBeTruthy();
+    //     expect(screen.queryAllByText(/Credits/i)).toBeTruthy();
+    //     expect(screen.queryAllByText(/Prereqs/i)).toBeTruthy();
+    //     expect(screen.queryAllByText(/Completed/i)).toBeTruthy();
+    //     expect(screen.queryAllByText(/Required/i)).toBeTruthy();
+    // });
     test("tesing remove a course", () => {
         const edit = screen.getAllByTestId("edit");
         //changing fall2022
@@ -42,14 +57,14 @@ describe("Edit, Add, and Remove Courses Tests", () => {
         const delCourse = screen.getAllByTestId("delete-course");
         //deleting first course
         delCourse[0].click();
-        //deleting semester
+        //save changes
         const saveSem = screen.getByTestId("save-semester");
         saveSem.click();
         const edit2 = screen.getAllByTestId("edit");
         //changing fall2022
         edit2[1].click();
         const delCourse2 = screen.getAllByTestId("delete-course");
-        //checking to see if default name is in...successful adding of course
+        //checking to see if default name is in...successful removal of course
         const length = delCourse2.length;
         expect(length === 1);
     });
