@@ -13,16 +13,18 @@ export function PlanList({
     editPlan: (id: number, newPlan: Plan) => void;
 }): JSX.Element {
     return (
-        <Stack gap={3}>
-            {plans.map((plan: Plan) => (
-                <div key={plan.id} className="bg-light border m-2 p-2">
-                    <PlanView
-                        plan={plan}
-                        deletePlan={deletePlan}
-                        editPlan={editPlan}
-                    ></PlanView>
-                </div>
-            ))}
-        </Stack>
+        <div>
+            <Stack gap={3}>
+                {plans.map((plan: Plan) => (
+                    <div key={plan.id} className="bg-light border m-2 p-2">
+                        <PlanView
+                            plan={plan}
+                            deletePlan={deletePlan}
+                            editPlan={editPlan}
+                        ></PlanView>
+                    </div>
+                ))}
+            </Stack>
+        </div>
     );
 }

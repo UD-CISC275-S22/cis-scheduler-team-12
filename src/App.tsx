@@ -7,11 +7,22 @@ import { AddPlanModal } from "./components/AddPlanModal";
 import { Button } from "react-bootstrap";
 
 export const DEFAULTS = defaults.map((plan): Plan => ({ ...plan }));
-
+// localStorage.clear();
+let loadedData = DEFAULTS;
+const saveDataKey = "MY-PAGE-DATA";
+const previousData = localStorage.getItem(saveDataKey);
+if (previousData !== null) {
+    loadedData = JSON.parse(previousData);
+}
 export function App(): JSX.Element {
     const [showAddModal, setShowAddModal] = useState(false);
-    const [plans, setPlans] = useState<Plan[]>(DEFAULTS);
-
+    //change to loaded data?
+    const [plans, setPlans] = useState<Plan[]>(loadedData);
+    // const [data, setData] = useState<Plan[]>(loadedData);
+    function saveData() {
+        localStorage.setItem(saveDataKey, JSON.stringify(plans));
+        console.log(JSON.stringify(plans));
+    }
     function editPlan(id: number, newPlan: Plan) {
         setPlans(
             plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
@@ -70,6 +81,7 @@ export function App(): JSX.Element {
                         addPlan={addPlan}
                     ></AddPlanModal>
                 </div>
+                <Button onClick={saveData}>Save Data</Button>
             </div>
             <div id="Footer">
                 <p>Made by Jackson Leadlove, Alex Trexler, and Andrew Woods</p>

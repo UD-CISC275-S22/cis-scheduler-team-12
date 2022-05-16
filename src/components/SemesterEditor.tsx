@@ -31,7 +31,7 @@ export function SemesterEditor({
             <Row className="justify-Center">
                 {/* Semester Quarter */}
                 <Form.Group
-                    controlID="formQuarter"
+                    controlid="formQuarter"
                     as={Row}
                     className="quarter-Year-Form"
                 >

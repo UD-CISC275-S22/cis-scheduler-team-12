@@ -25,8 +25,6 @@ export function PlanView({
     deletePlan: (id: number) => void;
     editPlan: (id: number, newPlan: Plan) => void;
 }): JSX.Element {
-    //console.log(DEFAULT_SEMESTERS);
-    //console.log(DEFAULT_SEMESTERS[0]);
     const [editing, setEditing] = useState<boolean>(false);
     const [semesters, setSemesters] = useState<Semester[]>(
         DEFAULT_SEMESTERS[0]
