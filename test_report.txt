@@ -2097,14 +2097,14 @@ FAIL src/components/SemesterList.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |      30 |    16.66 |      20 |   29.52 |                   
+All files            |   29.46 |    15.78 |      20 |   28.97 |                   
  src                 |    42.3 |    16.66 |   18.18 |   45.45 |                   
   App.tsx            |    42.3 |    16.66 |   18.18 |   45.45 | 15,23-43          
- src/components      |   26.19 |    16.66 |   20.33 |    25.3 |                   
+ src/components      |   25.58 |    15.62 |   20.33 |    24.7 |                   
   AddPlanModal.tsx   |      40 |      100 |   33.33 |      40 | 16-21,41          
-  CourseEditor.tsx   |    3.33 |        0 |       0 |    3.33 | 23-215            
+  CourseEditor.tsx   |    3.12 |        0 |       0 |    3.12 | 23-217            
   CourseList.tsx     |     100 |      100 |     100 |     100 |                   
-  PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-56             
+  PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-57             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
   PlanView.tsx       |    42.1 |    33.33 |   27.27 |   38.88 | 34-67,129         
   RecordControls.tsx |       0 |      100 |       0 |       0 | 9                 
@@ -2119,5 +2119,5 @@ All files            |      30 |    16.66 |      20 |   29.52 |
 Test Suites: 2 failed, 1 passed, 3 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        5.076 s
+Time:        4.131 s
 Ran all test suites.
