@@ -46,12 +46,12 @@ describe("Semester tests", () => {
         expect(screen.queryByText(/Fall 2022/i)).toBeNaN;
     });
     test("testing add a semester", () => {
-        //testing first semester exists
+        //testing there is one Fall 2022 semester
         expect(screen.queryAllByText(/Fall 2022/i).length).toBe(1);
-        //switching first semester to edit mode
+        //adding new semester
         const addSemester = screen.getByTestId("add-sem");
         addSemester.click();
-        //checking semester is gone
+        //checking there is a new Fall 2022 semester
         expect(screen.queryAllByText(/Fall 2022/i).length).toBe(2);
     });
 });
