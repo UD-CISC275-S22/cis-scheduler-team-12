@@ -38,6 +38,7 @@ export function SemesterEditor({
                     <Col>
                         <Form.Label>Quarter:</Form.Label>
                         <Form.Select
+                            data-testid="select-quarter"
                             value={quarter}
                             onChange={(
                                 event: React.ChangeEvent<HTMLSelectElement>
@@ -46,15 +47,24 @@ export function SemesterEditor({
                                 //console.log("Quarter edited");
                             }}
                         >
-                            <option value="Fall">Fall</option>
-                            <option value="Winter">Winter</option>
-                            <option value="Spring">Spring</option>
-                            <option value="Summer">Summer</option>
+                            <option data-testid="quarter-option" value="Fall">
+                                Fall
+                            </option>
+                            <option data-testid="quarter-option" value="Winter">
+                                Winter
+                            </option>
+                            <option data-testid="quarter-option" value="Spring">
+                                Spring
+                            </option>
+                            <option data-testid="quarter-option" value="Summer">
+                                Summer
+                            </option>
                         </Form.Select>
                     </Col>
                     <Col>
                         <Form.Label>Year:</Form.Label>
                         <Form.Control
+                            data-testid="change-year"
                             type="textbox"
                             value={year}
                             onChange={(

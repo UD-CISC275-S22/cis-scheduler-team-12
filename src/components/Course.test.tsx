@@ -11,7 +11,7 @@ describe("Edit, Add, and Remove Courses Tests", () => {
     afterEach(cleanup);
     test("tesing edit a course", () => {
         const edit = screen.getAllByTestId("edit");
-        //selecting fall2022
+        //selecting spring2023
         edit[1].click();
         //changing course code to CISC367 of first course
         const textbox = screen.queryAllByRole("textbox");
@@ -25,7 +25,7 @@ describe("Edit, Add, and Remove Courses Tests", () => {
     test("tesing add a course", () => {
         const edit = screen.getAllByTestId("edit");
         // console.log(edit);
-        //changing fall2022
+        //changing spring2023
         edit[1].click();
         const addCourse = screen.getByTestId("add-course");
         //adding blank course
@@ -66,7 +66,7 @@ describe("Edit, Add, and Remove Courses Tests", () => {
     // });
     test("tesing remove a course", () => {
         const edit = screen.getAllByTestId("edit");
-        //changing fall2022
+        //changing spring2023
         edit[1].click();
         const delCourse = screen.getAllByTestId("delete-course");
         //deleting first course
