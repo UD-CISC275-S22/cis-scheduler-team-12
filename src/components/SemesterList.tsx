@@ -21,6 +21,7 @@ export function SemesterList({
                     <Row>
                         <Col>
                             <SemesterView
+                                data-testid="semester-view"
                                 semester={semester}
                                 deleteSemester={deleteSemester}
                                 editSemester={editSemester}
