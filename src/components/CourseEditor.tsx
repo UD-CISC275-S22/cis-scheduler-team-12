@@ -123,7 +123,6 @@ export function CourseEditor({
                                             course.id,
                                             event.target.value
                                         );
-                                        console.log("Course code edited");
                                     }}
                                 />
                             </td>
@@ -138,7 +137,6 @@ export function CourseEditor({
                                             course.id,
                                             event.target.value
                                         );
-                                        console.log("Course title edited");
                                     }}
                                 />
                             </td>
@@ -153,7 +151,6 @@ export function CourseEditor({
                                             course.id,
                                             parseInt(event.target.value, 10)
                                         );
-                                        console.log("Course credits edited");
                                     }}
                                 />
                             </td>
@@ -168,7 +165,6 @@ export function CourseEditor({
                                             course.id,
                                             event.target.value
                                         );
-                                        console.log("Course prereqs edited");
                                     }}
                                 />
                             </td>

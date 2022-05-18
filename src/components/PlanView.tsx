@@ -37,7 +37,6 @@ export function PlanView({
                     semester.id === id ? newSemester : semester
             )
         );
-        console.log("Edited semester with id %d", id);
     }
 
     function deleteSemester(id: number) {
@@ -46,7 +45,6 @@ export function PlanView({
                 (semester: Semester): boolean => semester.id !== id
             )
         );
-        console.log("Deleted semester with id %d", id);
     }
     function addSemester() {
         if (semesters.length !== 0) {
@@ -83,12 +81,25 @@ export function PlanView({
             </div>
         </div>
     ) : editing ? (
-        <PlanEditor
-            changeEditing={changeEditing}
-            plan={plan}
-            editPlan={editPlan}
-            deletePlan={deletePlan}
-        ></PlanEditor>
+        <div>
+            <PlanEditor
+                changeEditing={changeEditing}
+                plan={plan}
+                editPlan={editPlan}
+                deletePlan={deletePlan}
+            ></PlanEditor>
+            <div className="Semester-list">
+                <SemesterList
+                    semesters={semesters}
+                    editSemester={editSemester}
+                    deleteSemester={deleteSemester}
+                    addSemester={addSemester}
+                ></SemesterList>
+            </div>
+            <Button data-testid="add-sem" onClick={() => addSemester()}>
+                Add Semester
+            </Button>
+        </div>
     ) : (
         <div className="Plan">
             <div className="Plan-header">

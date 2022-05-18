@@ -21,7 +21,6 @@ export function App(): JSX.Element {
     // const [data, setData] = useState<Plan[]>(loadedData);
     function saveData() {
         localStorage.setItem(saveDataKey, JSON.stringify(plans));
-        console.log(JSON.stringify(plans));
     }
     function editPlan(id: number, newPlan: Plan) {
         setPlans(
@@ -31,7 +30,6 @@ export function App(): JSX.Element {
 
     function deletePlan(id: number) {
         setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
-        console.log("Edited plan with id %d", id);
     }
 
     function addPlan(newPlan: Plan) {
@@ -40,7 +38,6 @@ export function App(): JSX.Element {
         );
         if (existing === undefined) {
             setPlans([...plans, { ...newPlan, id: plans.length + 1 }]);
-            console.log("Created new plan with id %d", plans.length + 1);
         }
     }
     const handleCloseAddModal = () => setShowAddModal(false);
