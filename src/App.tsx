@@ -19,9 +19,9 @@ export function App(): JSX.Element {
     //change to loaded data?
     const [plans, setPlans] = useState<Plan[]>(loadedData);
     // const [data, setData] = useState<Plan[]>(loadedData);
-    function saveData() {
-        localStorage.setItem(saveDataKey, JSON.stringify(plans));
-    }
+    //function saveData() {
+    //    localStorage.setItem(saveDataKey, JSON.stringify(plans));
+    //}
     function editPlan(id: number, newPlan: Plan) {
         setPlans(
             plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
@@ -78,7 +78,7 @@ export function App(): JSX.Element {
                         addPlan={addPlan}
                     ></AddPlanModal>
                 </div>
-                <Button onClick={saveData}>Save Data</Button>
+                {/*<Button onClick={saveData}>Save Data</Button>*/}
             </div>
             <div id="Footer">
                 <p>Made by Jackson Leadlove, Alex Trexler, and Andrew Woods</p>
