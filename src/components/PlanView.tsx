@@ -67,6 +67,7 @@ export function PlanView({
         <div className="Plan">
             <div className="Plan-header">
                 <h3>{plan.name}</h3>
+                <div style={{ width: "10px" }}></div>
                 <div className="Minimize-button">
                     <div>
                         <Button
@@ -115,6 +116,7 @@ export function PlanView({
                         </Button>
                     </div>
                 </div>
+                <div style={{ width: "10px" }}></div>
                 <div className="Minimize-button">
                     <div>
                         <Button
