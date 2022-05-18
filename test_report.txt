@@ -3,135 +3,21 @@
 > react-scripts test "--coverage"
 
 PASS src/components/Course.test.tsx
-  ● Console
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Course code edited
-
-      at onChange (src/components/CourseEditor.tsx:126:49)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Course code edited
-
-      at onChange (src/components/CourseEditor.tsx:126:49)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Course code edited
-
-      at onChange (src/components/CourseEditor.tsx:126:49)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Course code edited
-
-      at onChange (src/components/CourseEditor.tsx:126:49)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Course code edited
-
-      at onChange (src/components/CourseEditor.tsx:126:49)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Course code edited
-
-      at onChange (src/components/CourseEditor.tsx:126:49)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Course code edited
-
-      at onChange (src/components/CourseEditor.tsx:126:49)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Edited semester with id 2
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
 PASS src/components/Semester.test.tsx
-  ● Console
-
-    console.log
-      Edited semester with id 1
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Edited semester with id 1
-
-      at editSemester (src/components/PlanView.tsx:40:17)
-
-    console.log
-      Deleted semester with id 1
-
-      at deleteSemester (src/components/PlanView.tsx:49:17)
-
 PASS src/components/Plan.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   57.52 |     37.5 |   52.85 |   58.33 |                   
- src                 |    42.3 |    16.66 |   18.18 |   45.45 |                   
-  App.tsx            |    42.3 |    16.66 |   18.18 |   45.45 | 15,23-43          
- src/components      |   62.06 |    41.17 |   59.32 |   61.62 |                   
+All files            |   59.04 |     37.5 |   52.11 |      60 |                   
+ src                 |   47.82 |    16.66 |   18.18 |   52.63 |                   
+  App.tsx            |   47.82 |    16.66 |   18.18 |   52.63 | 15,23-40          
+ src/components      |   62.19 |    41.17 |   58.33 |   61.72 |                   
   AddPlanModal.tsx   |      40 |      100 |   33.33 |      40 | 16-21,41          
-  CourseEditor.tsx   |   40.62 |    21.42 |      40 |   40.62 | 32-77,98,137-194  
+  CourseEditor.tsx   |   42.85 |    21.42 |      40 |   42.85 | 32-77,98,136-190  
   CourseList.tsx     |     100 |      100 |     100 |     100 |                   
   PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-57             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
-  PlanView.tsx       |      85 |     62.5 |   81.81 |   84.21 | 59-65             
+  PlanView.tsx       |   78.94 |     62.5 |      75 |   77.77 | 57-63,99          
   RecordControls.tsx |       0 |      100 |       0 |       0 | 9                 
   SemesterEditor.tsx |     100 |       50 |     100 |     100 | 24-25             
   SemesterList.tsx   |     100 |      100 |     100 |     100 |                   
@@ -145,5 +31,5 @@ All files            |   57.52 |     37.5 |   52.85 |   58.33 |
 Test Suites: 3 passed, 3 total
 Tests:       9 passed, 9 total
 Snapshots:   0 total
-Time:        4.679 s
+Time:        5.452 s
 Ran all test suites.
