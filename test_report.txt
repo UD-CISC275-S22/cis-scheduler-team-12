@@ -8,16 +8,16 @@ PASS src/components/Plan.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   59.04 |     37.5 |   52.11 |      60 |                   
- src                 |   47.82 |    16.66 |   18.18 |   52.63 |                   
-  App.tsx            |   47.82 |    16.66 |   18.18 |   52.63 | 15,23-40          
+All files            |   59.61 |     37.5 |   52.85 |    60.6 |                   
+ src                 |      50 |    16.66 |      20 |   55.55 |                   
+  App.tsx            |      50 |    16.66 |      20 |   55.55 | 15,26-40          
  src/components      |   62.19 |    41.17 |   58.33 |   61.72 |                   
   AddPlanModal.tsx   |      40 |      100 |   33.33 |      40 | 16-21,41          
   CourseEditor.tsx   |   42.85 |    21.42 |      40 |   42.85 | 32-77,98,136-190  
   CourseList.tsx     |     100 |      100 |     100 |     100 |                   
   PlanEditor.tsx     |       0 |        0 |       0 |       0 | 17-57             
   PlanList.tsx       |     100 |      100 |     100 |     100 |                   
-  PlanView.tsx       |   78.94 |     62.5 |      75 |   77.77 | 57-63,99          
+  PlanView.tsx       |   78.94 |     62.5 |      75 |   77.77 | 57-63,100         
   RecordControls.tsx |       0 |      100 |       0 |       0 | 9                 
   SemesterEditor.tsx |     100 |       50 |     100 |     100 | 24-25             
   SemesterList.tsx   |     100 |      100 |     100 |     100 |                   
@@ -31,5 +31,5 @@ All files            |   59.04 |     37.5 |   52.11 |      60 |
 Test Suites: 3 passed, 3 total
 Tests:       9 passed, 9 total
 Snapshots:   0 total
-Time:        5.452 s
+Time:        6.035 s
 Ran all test suites.
