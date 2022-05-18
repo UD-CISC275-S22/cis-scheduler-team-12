@@ -48,7 +48,7 @@ export function AddPlanModal({
                         Close
                     </Button>
                     <Button
-                        data-testid="save-plan "
+                        data-testid="save-plan"
                         variant="primary"
                         onClick={saveChanges}
                     >
