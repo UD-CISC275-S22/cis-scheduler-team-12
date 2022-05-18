@@ -24,7 +24,6 @@ describe("Edit, Add, and Remove Courses Tests", () => {
     });
     test("tesing add a course", () => {
         const edit = screen.getAllByTestId("edit");
-        // console.log(edit);
         //changing spring2023
         edit[1].click();
         const addCourse = screen.getByTestId("add-course");
@@ -53,10 +52,8 @@ describe("Edit, Add, and Remove Courses Tests", () => {
     // test("tesing to see if courses are listed", () => {
     //     //checking to see if default fields are even listed
     //     const titles = screen.getAllByText(/Course Code/i);
-    //     console.log(titles[1]);
     //     expect(titles[1].children).toEqual("Course Code");
     //     // expect(titles[1]);
-    //     // console.log(screen.queryAllByText(/Course Code/i));
     //     // expect(screen.findAllByText(/Course Code/i)).toBeInTheDocument();
     //     expect(screen.queryAllByText(/Course Name/i)).toBeTruthy();
     //     expect(screen.queryAllByText(/Credits/i)).toBeTruthy();

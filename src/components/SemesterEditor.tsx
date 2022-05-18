@@ -44,7 +44,6 @@ export function SemesterEditor({
                                 event: React.ChangeEvent<HTMLSelectElement>
                             ) => {
                                 setQuarter(event.target.value);
-                                //console.log("Quarter edited");
                             }}
                         >
                             <option data-testid="quarter-option" value="Fall">
@@ -71,7 +70,6 @@ export function SemesterEditor({
                                 event: React.ChangeEvent<HTMLInputElement>
                             ) => {
                                 setYear(event.target.value);
-                                //console.log("Year edited");
                             }}
                         />
                     </Col>

@@ -103,12 +103,12 @@ export function CourseEditor({
             <table width="auto" className="Course-editor">
                 <tbody>
                     <tr>
-                        <th>Course Code</th>
-                        <th>Course Name</th>
-                        <th>Credits</th>
-                        <th>Prereqs</th>
-                        <th>Completed</th>
-                        <th>Required</th>
+                        <th style={{ width: "200px" }}>Course Code</th>
+                        <th style={{ width: "200px" }}>Course Name</th>
+                        <th style={{ width: "200px" }}>Credits</th>
+                        <th style={{ width: "200px" }}>Prereqs</th>
+                        <th style={{ width: "200px" }}>Completed</th>
+                        <th style={{ width: "200px" }}>Required</th>
                     </tr>
                     {courses.map((course: Course) => (
                         <tr key={course.id}>
@@ -123,7 +123,6 @@ export function CourseEditor({
                                             course.id,
                                             event.target.value
                                         );
-                                        console.log("Course code edited");
                                     }}
                                 />
                             </td>
@@ -138,7 +137,6 @@ export function CourseEditor({
                                             course.id,
                                             event.target.value
                                         );
-                                        console.log("Course title edited");
                                     }}
                                 />
                             </td>
@@ -153,7 +151,6 @@ export function CourseEditor({
                                             course.id,
                                             parseInt(event.target.value, 10)
                                         );
-                                        console.log("Course credits edited");
                                     }}
                                 />
                             </td>
@@ -168,7 +165,6 @@ export function CourseEditor({
                                             course.id,
                                             event.target.value
                                         );
-                                        console.log("Course prereqs edited");
                                     }}
                                 />
                             </td>
