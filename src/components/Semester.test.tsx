@@ -43,7 +43,7 @@ describe("Semester tests", () => {
         //deleting semester
         userEvent.click(screen.getByTestId("delete-semester"));
         //checking semester is gone
-        expect(screen.queryByText(/Fall 2022/i)).toBeNaN;
+        expect(screen.queryByText(/Fall 2022/i)).toBeNull;
     });
     test("testing add a semester", () => {
         //testing there is one Fall 2022 semester

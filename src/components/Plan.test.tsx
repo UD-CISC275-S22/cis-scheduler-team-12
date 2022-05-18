@@ -1,27 +1,11 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { PlanList } from "./PlanList";
-import defaults from "../data/default_plan.json";
-import { Plan } from "../interfaces/plan";
+import App from "../App";
+import userEvent from "@testing-library/user-event";
 
 describe("PlanList Component tests", () => {
     beforeEach(() => {
-        render(
-            <PlanList
-                plans={defaults}
-                deletePlan={function (id: number): void {
-                    console.log("deleted plan with id: " + id);
-                }}
-                editPlan={function (id: number, newPlan: Plan): void {
-                    console.log(
-                        "edited plan with id: " +
-                            id +
-                            " and replaced it with plan: " +
-                            newPlan.name
-                    );
-                }}
-            />
-        );
+        render(<App />);
     });
 
     test("Renders the default plan", () => {
@@ -36,10 +20,37 @@ describe("PlanList Component tests", () => {
         expect(w23).toBeInTheDocument();
         expect(u23).toBeInTheDocument();
     });
-
-    /*test("", () => {});
-
-    test("", () => {});
-
-    test("", () => {});*/
+    test("Can change plan name", () => {
+        //changing to plan edit mode
+        const editPlan = screen.getAllByText("Edit");
+        editPlan[0].click();
+        //finding textbox
+        const textbox = screen.queryAllByRole("textbox");
+        userEvent.type(textbox[0], " test");
+        //testing for edited title
+        expect(screen.queryByText("Default Plan test")).toBeInTheDocument;
+    });
+    test("Can delete plan", () => {
+        //changing to plan edit mode
+        const editPlan = screen.getAllByText("Edit");
+        editPlan[0].click();
+        //clicking delete button
+        const deleteButton = screen.getByTestId("delete-plan");
+        deleteButton.click();
+        //testing for edited title
+        expect(screen.queryByText("Default Plan")).toBeNull;
+    });
+    test("Can add a plan", () => {
+        //clicking add plan
+        const addPlan = screen.getByTestId("addmodal");
+        addPlan.click();
+        //give new plan a name
+        const textbox = screen.queryAllByRole("textbox");
+        userEvent.type(textbox[0], "New Plan");
+        //confirming add plan
+        const confirm = screen.getByTestId("save-plan");
+        confirm.click();
+        //testing if new title is present
+        expect(screen.queryByText("New Plan")).toBeInTheDocument;
+    });
 });
